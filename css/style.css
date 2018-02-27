@@ -1,0 +1,799 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/_other.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-feature-settings: "palt";
+}
+
+/* line 13, ../sass/_other.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 16, ../sass/_other.scss */
+body {
+  position: relative;
+  font-size: 1.4rem;
+  background-color: #f1eec8;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  font-weight: 500;
+}
+
+/* line 23, ../sass/_other.scss */
+.fontCandy {
+  font-family: 'Emilys Candy', cursive;
+}
+
+/* line 27, ../sass/_other.scss */
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 31, ../sass/_other.scss */
+.yu-mincho {
+  font-family: "Yu Mincho", "YuMincho";
+}
+
+/* line 35, ../sass/_other.scss */
+.bungee, header .inner .headerLogo a, header .inner ul li a, #yuzuPortfolio .firstView .textWrap .logo, #yuzuPortfolio .cmnContentsWrap .cmnInner .cmnTit {
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bold;
+}
+
+/* line 40, ../sass/_other.scss */
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 45, ../sass/_other.scss */
+header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #fff;
+  z-index: 3;
+}
+/* line 54, ../sass/_other.scss */
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
+  color: #38374f;
+}
+/* line 63, ../sass/_other.scss */
+header .inner .headerLogo a {
+  color: #38374f;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 300;
+}
+/* line 72, ../sass/_other.scss */
+header .inner ul {
+  display: flex;
+  align-items: center;
+}
+/* line 77, ../sass/_other.scss */
+header .inner ul li a {
+  padding: 0 5px;
+  color: #38374f;
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+/* line 84, ../sass/_other.scss */
+header .inner ul li a:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+/* line 94, ../sass/_other.scss */
+#yuzuPortfolio {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  background-image: url("../img/main_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/* line 105, ../sass/_other.scss */
+#yuzuPortfolio .firstView {
+  width: 980px;
+  margin: 80px auto;
+  padding: 40px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+/* line 114, ../sass/_other.scss */
+#yuzuPortfolio .firstView .textWrap .logo {
+  margin-bottom: 10px;
+  color: #38374f;
+  font-size: 15rem;
+  text-align: center;
+}
+/* line 125, ../sass/_other.scss */
+#yuzuPortfolio .cmnContentsWrap {
+  width: 980px;
+  margin: 0 auto;
+  color: #38374f;
+  padding: 60px 0;
+  position: relative;
+}
+/* line 132, ../sass/_other.scss */
+#yuzuPortfolio .cmnContentsWrap .cmnInner {
+  padding: 60px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 136, ../sass/_other.scss */
+#yuzuPortfolio .cmnContentsWrap .cmnInner .cmnTit {
+  padding-bottom: 40px;
+  font-size: 5rem;
+  text-align: center;
+}
+/* line 143, ../sass/_other.scss */
+#yuzuPortfolio .cmnContentsWrap .cmnInner .cmnDetail {
+  width: 720px;
+  margin: 0 auto;
+}
+/* line 152, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+/* line 157, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile .img {
+  width: 280px;
+  height: auto;
+  font-size: 0;
+}
+/* line 162, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile .img img {
+  width: 100%;
+  display: block;
+}
+/* line 168, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile dl {
+  width: 400px;
+  margin-left: 40px;
+}
+/* line 172, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile dl dt, #yuzuPortfolio .aboutMe .cmnInner .aboutProfile dl dd {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 0;
+}
+/* line 178, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile dl dt {
+  width: 90px;
+  font-size: 1.6rem;
+}
+/* line 183, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .aboutProfile dl dd {
+  width: 310px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+/* line 192, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column {
+  padding-top: 40px;
+}
+/* line 195, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column .tit {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 5px 30px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #000;
+}
+/* line 202, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column .tit::before, #yuzuPortfolio .aboutMe .cmnInner .intro .column .tit::after {
+  position: absolute;
+  content: '□';
+}
+/* line 208, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column .tit::before {
+  top: 0;
+  left: 5px;
+  color: #000;
+  font-size: 1.8rem;
+}
+/* line 214, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column .tit::after {
+  top: 7px;
+  left: 12px;
+  color: #000;
+  font-size: 1.6rem;
+}
+/* line 222, ../sass/_other.scss */
+#yuzuPortfolio .aboutMe .cmnInner .intro .column .text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+/* line 234, ../sass/_other.scss */
+#yuzuPortfolio .skill .cmnInner .skillDetail {
+  text-align: center;
+}
+/* line 237, ../sass/_other.scss */
+#yuzuPortfolio .skill .cmnInner .skillDetail ul {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 241, ../sass/_other.scss */
+#yuzuPortfolio .skill .cmnInner .skillDetail ul.lang {
+  margin-right: 40px;
+}
+/* line 245, ../sass/_other.scss */
+#yuzuPortfolio .skill .cmnInner .skillDetail ul li {
+  padding: 8px 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+/* line 251, ../sass/_other.scss */
+#yuzuPortfolio .skill .cmnInner .skillDetail ul li img, #yuzuPortfolio .skill .cmnInner .skillDetail ul li p {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 264, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail .footerLink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px 0 0 0;
+  text-decoration: none;
+  transition: 300ms;
+}
+/* line 276, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail .footerLink:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+/* line 280, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 0;
+}
+/* line 286, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dt, #yuzuPortfolio .works .cmnInner .worksDetail dl dd {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 291, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dt {
+  width: 200px;
+  padding: 5px 0;
+  font-size: 1.6rem;
+}
+/* line 297, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd {
+  width: 520px;
+}
+/* line 300, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .tit {
+  position: relative;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+/* line 305, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .tit:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0px;
+  border-bottom: solid 2px #38374f;
+  border-right: solid 2px #38374f;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  margin-top: -6px;
+}
+/* line 321, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .tit:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
+}
+/* line 327, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .tit a {
+  display: inline-block;
+  padding: 8px 5px;
+  color: #8f8af3;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 336, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .tit p {
+  display: block;
+  padding: 8px 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* line 344, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .detail {
+  display: none;
+  padding: 10px 0;
+}
+/* line 348, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .detail p {
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+/* line 354, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .detail p .bold {
+  display: block;
+  font-weight: bold;
+}
+/* line 359, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .detail p a {
+  display: inline-block;
+}
+/* line 365, ../sass/_other.scss */
+#yuzuPortfolio .works .cmnInner .worksDetail dl dd .open {
+  display: block;
+}
+/* line 378, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul {
+  font-size: 0;
+}
+/* line 381, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li {
+  display: inline-block;
+  width: 92px;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #38374f;
+  border: 1px solid #38374f;
+  background: transparent;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: top;
+}
+/* line 394, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:first-child:hover {
+  border: 1px solid transparent;
+  background: #d11d0f;
+}
+/* line 398, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(2), #yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(5) {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 404, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(2):after, #yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(5):after {
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  z-index: -1;
+  width: 0;
+  height: 0;
+  transition: .3s;
+}
+/* line 414, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(2):after {
+  background: #ff8042;
+}
+/* line 417, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(5):after {
+  background: #5a8dcf;
+}
+/* line 420, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(2):hover:after, #yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(5):hover:after {
+  width: 160px;
+  height: 160px;
+}
+/* line 425, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(3) {
+  position: relative;
+  perspective: 400px;
+  z-index: 1;
+  transition-delay: 0s;
+}
+/* line 431, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(3):nth-child(3):after {
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #ffe55f;
+  transition: .3s;
+  visibility: hidden;
+  transform: rotateX(270deg);
+  transform-origin: 50% 0;
+  transition: .3s;
+}
+/* line 446, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(3):hover:after {
+  visibility: visible;
+  transform: rotateX(0);
+}
+/* line 451, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(4):hover {
+  border: 1px solid transparent;
+  background: #3c8a3e;
+}
+/* line 455, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(6) {
+  position: relative;
+  z-index: 1;
+}
+/* line 459, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(6):after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  margin: 0;
+  background: #7b63b9;
+  z-index: -1;
+  transition: .3s;
+}
+/* line 473, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:nth-child(6):hover:after {
+  width: 100%;
+}
+/* line 477, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:last-child {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 482, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:last-child:after {
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border: 50px double rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transition: .5s;
+}
+/* line 493, ../sass/_other.scss */
+#yuzuPortfolio .omake .cmnInner .omakeDetail .colorListWrap ul li:last-child:hover:after {
+  border-width: 0;
+  border-color: #f84191;
+  background: #f84191;
+  width: 130px;
+  height: 130px;
+}
+/* line 511, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap {
+  width: 450px;
+  margin: 0 auto;
+}
+/* line 515, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dt, #yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd {
+  font-size: 2rem;
+}
+/* line 518, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dt {
+  margin-bottom: 5px;
+}
+/* line 521, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap .genderMargin {
+  margin-bottom: 30px;
+}
+/* line 524, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd {
+  margin-bottom: 20px;
+}
+/* line 527, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .textArea {
+  width: 450px;
+  height: 60px;
+  padding: 5px 10px;
+  border: 1px solid #fdfdfd;
+  font-size: 2rem;
+  cursor: text;
+  background: rgba(255, 255, 255, 0.6);
+  color: #38374f;
+}
+/* line 537, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .radio {
+  display: none;
+}
+/* line 540, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .radioIcon:before {
+  content: "\f3a6";
+  font-family: "Ionicons";
+  color: #8f8af3;
+  font-size: 2rem;
+}
+/* line 546, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd :checked + .radioIcon:before {
+  content: "\f3a7";
+  font-family: "Ionicons";
+  color: #f2f642;
+}
+/* line 551, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .inputCheckBox {
+  width: 48%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+/* line 556, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .inputCheckBox input {
+  display: none;
+}
+/* line 559, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .inputCheckBox input + .checkboxIcon {
+  position: relative;
+  vertical-align: middle;
+}
+/* line 564, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .inputCheckBox input + .checkboxIcon:before {
+  content: "\f387";
+  font-family: "Ionicons";
+  font-size: 2rem;
+  color: #8f8af3;
+}
+/* line 571, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap dd .inputCheckBox input:checked + .checkboxIcon:before {
+  content: "\f388";
+  font-family: "Ionicons";
+  color: #f2f642;
+}
+/* line 580, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap button {
+  display: inline-block;
+  width: 48%;
+  margin: 10px auto 20px;
+  padding: 12px;
+  font-size: 1.8rem;
+  color: #38374f;
+  font-weight: lighter;
+  border: 1px solid #fdfdfd;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.6);
+  transition: .3s;
+  cursor: pointer;
+}
+/* line 594, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap button.resetBtn {
+  margin-right: 14px;
+}
+/* line 597, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap button.resetBtn:hover {
+  background-color: #8fc0dc;
+}
+/* line 603, ../sass/_other.scss */
+#yuzuPortfolio .contact .cmnInner .contactDetail .formWrap button.submitBtn:hover {
+  background-color: #f97a84;
+}
+/* line 613, ../sass/_other.scss */
+#yuzuPortfolio footer {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* modal */
+/* line 621, ../sass/_other.scss */
+.modalNav {
+  width: 100%;
+  position: absolute;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 40%;
+}
+/* line 630, ../sass/_other.scss */
+.modalNav li {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 60px;
+  height: 20px;
+  color: #38374f;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 641, ../sass/_other.scss */
+.modalNav li.prev {
+  left: -75px;
+}
+/* line 644, ../sass/_other.scss */
+.modalNav li.prev:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+/* line 649, ../sass/_other.scss */
+.modalNav li.next {
+  right: -75px;
+}
+/* line 652, ../sass/_other.scss */
+.modalNav li.next:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+/* line 660, ../sass/_other.scss */
+.modalOutline {
+  display: none;
+  width: 495px;
+  height: 370px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+/* line 668, ../sass/_other.scss */
+.modalOutline .modalMain {
+  width: 495px;
+  height: 370px;
+  overflow: visible;
+  z-index: 3;
+}
+/* line 674, ../sass/_other.scss */
+.modalOutline .content {
+  width: 495px;
+  height: 370px;
+  position: relative;
+  z-index: 4;
+}
+/* line 680, ../sass/_other.scss */
+.modalOutline .content .colorDetail {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+}
+/* line 688, ../sass/_other.scss */
+.modalOutline .content .closeBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #38374f;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+/* line 698, ../sass/_other.scss */
+.modalOutline .content .closeBtn:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+/* line 706, ../sass/_other.scss */
+#modalBg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(152, 152, 152, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
