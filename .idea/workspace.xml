@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e85d5aa5-90d7-43cd-92cc-5b64f2a1b8c5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/9d33e77ca2ab68c1d520f418f384d3c74c4ddc6d/_other.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9d33e77ca2ab68c1d520f418f384d3c74c4ddc6d/_other.scssc" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/img/apple.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/atlassian.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/atom.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/bitbucket.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/brackets.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/chrome.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/css3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/git.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/gulp.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/hear_7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/html5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/illustrator.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/javascript_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/main_bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/nodejs.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/photoshop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/php.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/phpstorm.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/sass.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/windows.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/wordpress.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/yuzu.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/sass/_mixin.scss" afterPath="$PROJECT_DIR$/sass/_mixin.scss" />
       <change beforePath="$PROJECT_DIR$/sass/_other.scss" afterPath="$PROJECT_DIR$/sass/_other.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,10 +21,10 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="608">
-                  <caret line="234" column="30" lean-forward="false" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
+                <state relative-caret-position="601">
+                  <caret line="234" column="38" lean-forward="false" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
                   <folding>
-                    <element signature="e#5296#5302#0" expanded="true" />
+                    <element signature="e#5393#5399#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -68,8 +37,8 @@
           <file leaf-file-name="_other.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_other.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+                <state relative-caret-position="392">
+                  <caret line="437" column="20" lean-forward="false" selection-start-line="437" selection-start-column="20" selection-end-line="437" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -236,12 +205,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519700514167</updated>
-      <workItem from="1519700515461" duration="18440000" />
+      <workItem from="1519700515461" duration="18809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18440000" />
+    <option name="totallyTimeSpent" value="18809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="381" y="-1029" width="1314" height="1002" extended-state="0" />
@@ -304,18 +273,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="234" column="30" lean-forward="false" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
+        <state relative-caret-position="601">
+          <caret line="234" column="38" lean-forward="false" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
           <folding>
-            <element signature="e#5296#5302#0" expanded="true" />
+            <element signature="e#5393#5399#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_other.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="259" column="43" lean-forward="false" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+        <state relative-caret-position="392">
+          <caret line="437" column="20" lean-forward="false" selection-start-line="437" selection-start-column="20" selection-end-line="437" selection-end-column="20" />
           <folding />
         </state>
       </provider>

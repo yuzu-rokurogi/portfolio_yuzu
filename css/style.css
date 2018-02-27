@@ -511,11 +511,22 @@ header ul li a {
 }
 
 /* line 437, ../sass/_other.scss */
+.goTop {
+  padding-bottom: 8%;
+}
+/* line 439, ../sass/_other.scss */
+.goTop a {
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 446, ../sass/_other.scss */
 footer {
   padding: 8px 0;
   background-color: #F0EFF0;
 }
-/* line 441, ../sass/_other.scss */
+/* line 450, ../sass/_other.scss */
 footer span {
   display: block;
   font-size: 1.1rem;
