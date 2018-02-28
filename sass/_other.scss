@@ -69,8 +69,15 @@ img {
 
 header {
   width: 100%;
-  padding: 5% 0;
+  height: 55px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
   box-shadow: 0 1px 8px -4px rgba(0,0,0,15);
+  z-index: 10;
+
 
   ul {
     display: flex;
@@ -79,7 +86,7 @@ header {
     li {
       a {
         @extend .fontOswald;
-        font-size: 1.8rem;
+        font-size: 16px;
         line-height: 1;
         text-align: center;
       }
@@ -131,9 +138,31 @@ header {
     bottom: 0;
   }
 }
+.fuwafuwa {
+  -webkit-animation-name:fuwafuwa;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease;
+
+  -moz-animation-name:fuwafuwa;
+  -moz-animation-duration:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fuwafuwa {
+  0% {-webkit-transform:translate(0, 0);}
+  50% {-webkit-transform:translate(0, -10px);}
+  100% {-webkit-transform:translate(0, 0);}
+}
+@-moz-keyframes fuwafuwa {
+  0% {-moz-transform:translate(0, 0);}
+  50% {-moz-transform:translate(0, -5px);}
+  100% {-moz-transform:translate(0, 0);}
+}
 
 .profile {
-  padding-top: 30%;
+  padding-top: 20%;
 
   .inner {
     position: relative;

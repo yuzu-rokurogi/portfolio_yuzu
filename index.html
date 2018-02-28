@@ -14,17 +14,17 @@
 	<header>
     <ul>
       <li>
-        <a href="">TOP</a>
+        <a href="#">TOP</a>
       </li>
       <li>
-        <a href="">Profile</a>
+        <a href="#profile">Profile</a>
       </li>
       <li>
-        <a href="">Skill</a>
+        <a href="#skill">Skill</a>
       </li>
     </ul>
 	</header>
-	<section class="firstView">
+  <section class="firstView">
     <div class="inner">
       <div class="titWrap">
         <h1>
@@ -39,10 +39,10 @@
       </div>
     </div>
     <div class="scrollIcon">
-      <img src="img/scroll.png" alt="Scroll">
+      <img class="fuwafuwa" src="img/scroll.png" alt="Scroll">
     </div>
-	</section>
-  <section class="profile">
+  </section>
+  <section id="profile" class="profile">
     <div class="inner">
       <div class="imgWrap w80">
         <img src="img/yui.jpeg" alt="">
@@ -102,7 +102,7 @@
       </dl>
     </div>
   </section>
-  <section class="skill">
+  <section id="skill" class="skill">
     <div class="inner">
       <h2>Skill</h2>
       <div class="imgWrap">
@@ -236,70 +236,27 @@
     </a>
   </div>
   <footer>
-    <span>
-      &copy;2018 Yuzu Haramaki
-    </span>
+  <span>
+    &copy;2018 Yuzu Haramaki
+  </span>
   </footer>
 <script>
 	$(function () {
+	    var headerH = $('header').outerHeight();
+	    $(window).on('load', function () {
+          $('body').css('margin-top', headerH + 'px');
+      })
 
-		//colorボタンをクリックしたら起こる処理
-		$('.colorListWrap ul li').on('click',function () {
-			//colorボタンをクリックすると.modalOutline表示
-			$('.modalOutline').show();
-			$('.colorModal .colorDetail').stop(true,true).hide();
-			//data-idでどのボタン押したか判定
-			$('#'+$(this).attr('data-id')).stop(true,true).show();
-			changeModalNav($(this));
-
-			//モーダル内ページングクリックしたときの処理
-			$('.modalNav li').on('click',function () {
-				$('.colorModal .colorDetail').stop(true,true).fadeOut();
-				$('#'+$(this).attr('data-id')).stop(true,true).fadeIn();
-				changeModalNav($(this));
-			});
-
-			//モーダルの背景 .append();で#modalBg付加(このやり方は永遠にmodalBgが付加され続けるので却下)
-			//$('body').append('<div id="modalBg"></div>');
-
-			$('#modalBg').fadeIn();
-			//周りの部分またはCLOSEボタンクリックでモーダル閉じる
-			$('#modalBg,.closeBtn').on('click',function(){
-				$('.modalOutline,#modalBg').fadeOut();
-			});
-		});
+      //var headerHight = 100; //ヘッダの高さ
+      $('a[href^=#]').on('click', function(){
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top-headerH; //ヘッダの高さ分位置をずらす
+          $("html, body").animate({scrollTop:position}, 500);
+          return false;
+      });
 	});
 
-	//モーダル表示したときのページング
-	function changeModalNav(clickItem) {
-		//変数modalBtnNameに.colorBtnを代入
-		var modalBtnName = '.colorBtn';
-		//変数maxModalNumに.colorBtnの数を代入
-		var maxModalNum  = $(modalBtnName).length;
-
-		//ickModal変数に代入　取得したdata-id
-		var clickModal   = clickItem.attr('data-id');
-		//変数currentNumにページの数値だけを取得して代入
-		var currentNum   = parseInt(clickModal.replace(/[^0-9]/g,''));
-
-		//prevNumにcurrentNumに代入した数値から‐1した数を代入
-		var prevNum      = currentNum -1;
-		//nextNumにcurrentNumに代入した数値から+1した数を代入
-		var nextNum      = currentNum +1;
-
-		//nextNumがmaxModalNum（.colorBtnの数）より大きいときnextNumに1を代入
-		if(nextNum > maxModalNum) {
-			nextNum = 1;
-		}
-		//prevNumが１より小さいとき5を代入
-		if (prevNum < 1) {
-			prevNum = 5;
-		}
-
-		//.modalNav .prevの'data-id'を、colorという文字列 + prevNumをつけた値に置き換え
-		$('.modalNav .prev').attr('data-id', 'color' + prevNum);
-		$('.modalNav .next').attr('data-id', 'color' + nextNum);
-	}
 </script>
 
 </body>
