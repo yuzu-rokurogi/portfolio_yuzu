@@ -26,15 +26,15 @@
 	</header>
   <section class="firstView">
     <div class="inner">
-      <div class="titWrap">
-        <h1>
+      <div class="titWrap" >
+        <h1 id="title01">
           Yuzu Haramaki
         </h1>
-        <p>
+        <p id="title02">
           Portfolio Site
         </p>
       </div>
-      <div class="imgWrap w80">
+      <div id="image01" class="imgWrap w80">
         <img src="img/first_view.jpg">
       </div>
     </div>
@@ -44,10 +44,10 @@
   </section>
   <section id="profile" class="profile">
     <div class="inner">
-      <div class="imgWrap w80">
-        <img src="img/yui.jpeg" alt="">
+      <div id="image02" class="imgWrap w80">
+        <img src="img/yuzupon_sp.png" alt="">
       </div>
-      <h2>
+      <h2 id="title03">
         Profile
       </h2>
     </div>
@@ -104,8 +104,8 @@
   </section>
   <section id="skill" class="skill">
     <div class="inner">
-      <h2>Skill</h2>
-      <div class="imgWrap">
+      <h2 id="title04">Skill</h2>
+      <div id="image03" class="imgWrap">
         <img src="img/skill.jpg">
       </div>
     </div>
@@ -240,6 +240,9 @@
     &copy;2018 Yuzu Haramaki
   </span>
   </footer>
+  <script type="text/javascript" src="js/plugin/anime.min.js"></script>
+  <script type="text/javascript" src="js/plugin/scrollMonitor.js"></script>
+  <script type="text/javascript" src="js/plugin/main.js"></script>
 <script>
 	$(function () {
 	    var headerH = $('header').outerHeight();
@@ -247,16 +250,229 @@
           $('body').css('margin-top', headerH + 'px');
       })
 
-      //var headerHight = 100; //ヘッダの高さ
-      $('a[href^=#]').on('click', function(){
+      $('a[href^="#"]').on('click', function(){
+          var speed = 400;
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top-headerH; //ヘッダの高さ分位置をずらす
-          $("html, body").animate({scrollTop:position}, 500);
+          var position = target.offset().top - headerH;
+          $("html, body").stop().animate({scrollTop:position}, speed);
           return false;
       });
 	});
 
+  (function() {
+      setTimeout(moveTit1, 100);
+      function moveTit1() {
+          var scrollElemToWatch_1 = document.getElementById('title01'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#18141B',
+                      duration: 400,
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+
+      setTimeout(moveTit2, 350);
+      function moveTit2() {
+          var scrollElemToWatch_1 = document.getElementById('title02'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#18141B',
+                      duration: 650,
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+
+      setTimeout(moveImg1, 650);
+      function moveImg1() {
+          var scrollElemToWatch_1 = document.getElementById('image01'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#eff5f5',
+                      duration: 650,
+                      direction: 'rl',
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+
+      setTimeout(move3, 100);
+      function move3() {
+          var scrollElemToWatch_1 = document.getElementById('title03'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#18141B',
+                      duration: 400,
+                      direction: 'rl',
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+
+      setTimeout(moveImg2, 100);
+      function moveImg2() {
+          var scrollElemToWatch_1 = document.getElementById('image02'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#b7a8e5',
+                      duration: 400,
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+
+      setTimeout(move4, 100);
+      function move4() {
+          var scrollElemToWatch_1 = document.getElementById('title04'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#18141B',
+                      duration: 400,
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+      setTimeout(moveImg3, 100);
+      function moveImg3() {
+          var scrollElemToWatch_1 = document.getElementById('image03'),
+              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
+              rev1 = new RevealFx(scrollElemToWatch_1, {
+                  revealSettings : {
+                      bgcolor: '#9c96a0',
+                      duration: 400,
+                      direction: 'rl',
+                      onStart: function(contentEl, revealerEl) {
+                          anime.remove(contentEl);
+                          contentEl.style.opacity = 0;
+                      },
+                      onCover: function(contentEl, revealerEl) {
+                          contentEl.style.opacity = 1;
+                          anime({
+                              targets: contentEl,
+                              duration: 100,
+                              delay: 10,
+                              easing: 'easeOutExpo',
+                              opacity: [0,1]
+                          });
+                      }
+                  }
+              })
+          watcher_1.enterViewport(function() {
+              rev1.reveal();
+              watcher_1.destroy();
+          });
+      }
+  })();
 </script>
 
 </body>
