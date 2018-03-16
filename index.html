@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<title>Yuzu Haramaki Portfolio Site</title>
 	<meta name="description" content="はらまき ゆずのポートフォリオサイト">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/cmn.js"></script>
@@ -37,8 +38,8 @@
         <img src="img/first_view.png">
       </div>
     </div>
-    <div class="scrollIcon">
-      <img class="fuwafuwa" src="img/scroll.png" alt="Scroll">
+    <div class="scrollIcon fuwafuwa">
+      <img class="" src="img/scroll.png" alt="Scroll">
     </div>
   </section>
   <section id="profile" class="profile">
@@ -203,259 +204,259 @@
       </li>
     </ul>
   </section>
-  <section class="contact">
-    <h2>
-      Contact
-    </h2>
-    <p>
-      お問合わせ・フォロー<br>
-      お気軽にお待ちしております
-    </p>
-    <ul>
-      <li>
-        <a>
-          <img src="img/icon_mail.png" alt="mail">
-        </a>
-      </li>
-      <li>
-        <a>
-          <img src="img/icon_facebook.png" alt="Facebook">
-        </a>
-      </li>
-      <li>
-        <a>
-          <img src="img/icon_twitter.png" alt="Twitter">
-        </a>
-      </li>
-    </ul>
-  </section>
-  <div class="goTop">
-    <a href="#">
-      <img src="img/top.png" alt="TOP">
-    </a>
-  </div>
-  <footer>
-  <span>
-    &copy;2018 Yuzu Haramaki
-  </span>
-  </footer>
-  <script type="text/javascript" src="js/plugin/anime.min.js"></script>
-  <script type="text/javascript" src="js/plugin/scrollMonitor.js"></script>
-  <script type="text/javascript" src="js/plugin/main.js"></script>
-<script>
-  $(function() {
-      setTimeout(moveTit1, 100);
-      function moveTit1() {
-          var scrollElemToWatch_1 = document.getElementById('title01'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#18141B',
-                      duration: 400,
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
+  <!--<section class="contact">-->
+    <!--<h2>-->
+      <!--Contact-->
+    <!--</h2>-->
+    <!--<p>-->
+      <!--お問合わせ・フォロー<br>-->
+      <!--お気軽にお待ちしております-->
+    <!--</p>-->
+    <!--<ul>-->
+      <!--<li>-->
+        <!--<a>-->
+          <!--<img src="img/icon_mail.png" alt="mail">-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a>-->
+          <!--<img src="img/icon_facebook.png" alt="Facebook">-->
+        <!--</a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a>-->
+          <!--<img src="img/icon_twitter.png" alt="Twitter">-->
+        <!--</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</section>-->
+  <!--<div class="goTop">-->
+    <!--<a href="#">-->
+      <!--<img src="img/top.png" alt="TOP">-->
+    <!--</a>-->
+  <!--</div>-->
+  <!--<footer>-->
+  <!--<span>-->
+    <!--&copy;2018 Yuzu Haramaki-->
+  <!--</span>-->
+  <!--</footer>-->
+<script type="text/javascript" src="js/plugin/anime.min.js"></script>
+<script type="text/javascript" src="js/plugin/scrollMonitor.js"></script>
+<script type="text/javascript" src="js/plugin/main.js"></script>
+<!--<script>-->
+  <!--$(function() {-->
+      <!--setTimeout(moveTit1, 100);-->
+      <!--function moveTit1() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('title01'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#18141B',-->
+                      <!--duration: 400,-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
 
-      setTimeout(moveTit2, 350);
-      function moveTit2() {
-          var scrollElemToWatch_1 = document.getElementById('title02'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#18141B',
-                      duration: 650,
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
+      <!--setTimeout(moveTit2, 350);-->
+      <!--function moveTit2() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('title02'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#18141B',-->
+                      <!--duration: 650,-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
 
-      setTimeout(moveImg1, 650);
-      function moveImg1() {
-          var scrollElemToWatch_1 = document.getElementById('image01'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#eff5f5',
-                      duration: 650,
-                      direction: 'rl',
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
+      <!--setTimeout(moveImg1, 650);-->
+      <!--function moveImg1() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('image01'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#eff5f5',-->
+                      <!--duration: 650,-->
+                      <!--direction: 'rl',-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
 
-      setTimeout(move3, 100);
-      function move3() {
-          var scrollElemToWatch_1 = document.getElementById('title03'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#18141B',
-                      duration: 400,
-                      direction: 'rl',
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
+      <!--setTimeout(move3, 100);-->
+      <!--function move3() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('title03'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#18141B',-->
+                      <!--duration: 400,-->
+                      <!--direction: 'rl',-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
 
-      setTimeout(moveImg2, 100);
-      function moveImg2() {
-          var scrollElemToWatch_1 = document.getElementById('image02'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#b7a8e5',
-                      duration: 400,
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
+      <!--setTimeout(moveImg2, 100);-->
+      <!--function moveImg2() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('image02'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#b7a8e5',-->
+                      <!--duration: 400,-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
 
-      setTimeout(move4, 100);
-      function move4() {
-          var scrollElemToWatch_1 = document.getElementById('title04'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#18141B',
-                      duration: 400,
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
-      setTimeout(moveImg3, 100);
-      function moveImg3() {
-          var scrollElemToWatch_1 = document.getElementById('image03'),
-              watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),
-              rev1 = new RevealFx(scrollElemToWatch_1, {
-                  revealSettings : {
-                      bgcolor: '#9c96a0',
-                      duration: 400,
-                      direction: 'rl',
-                      onStart: function(contentEl, revealerEl) {
-                          anime.remove(contentEl);
-                          contentEl.style.opacity = 0;
-                      },
-                      onCover: function(contentEl, revealerEl) {
-                          contentEl.style.opacity = 1;
-                          anime({
-                              targets: contentEl,
-                              duration: 100,
-                              delay: 10,
-                              easing: 'easeOutExpo',
-                              opacity: [0,1]
-                          });
-                      }
-                  }
-              })
-          watcher_1.enterViewport(function() {
-              rev1.reveal();
-              watcher_1.destroy();
-          });
-      }
-  });
-</script>
+      <!--setTimeout(move4, 100);-->
+      <!--function move4() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('title04'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#18141B',-->
+                      <!--duration: 400,-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
+      <!--setTimeout(moveImg3, 100);-->
+      <!--function moveImg3() {-->
+          <!--var scrollElemToWatch_1 = document.getElementById('image03'),-->
+              <!--watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),-->
+              <!--rev1 = new RevealFx(scrollElemToWatch_1, {-->
+                  <!--revealSettings : {-->
+                      <!--bgcolor: '#9c96a0',-->
+                      <!--duration: 400,-->
+                      <!--direction: 'rl',-->
+                      <!--onStart: function(contentEl, revealerEl) {-->
+                          <!--anime.remove(contentEl);-->
+                          <!--contentEl.style.opacity = 0;-->
+                      <!--},-->
+                      <!--onCover: function(contentEl, revealerEl) {-->
+                          <!--contentEl.style.opacity = 1;-->
+                          <!--anime({-->
+                              <!--targets: contentEl,-->
+                              <!--duration: 100,-->
+                              <!--delay: 10,-->
+                              <!--easing: 'easeOutExpo',-->
+                              <!--opacity: [0,1]-->
+                          <!--});-->
+                      <!--}-->
+                  <!--}-->
+              <!--})-->
+          <!--watcher_1.enterViewport(function() {-->
+              <!--rev1.reveal();-->
+              <!--watcher_1.destroy();-->
+          <!--});-->
+      <!--}-->
+  <!--});-->
+<!--</script>-->
 
 </body>

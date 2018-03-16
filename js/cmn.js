@@ -1,6 +1,7 @@
 $(function () {
     var headerH = $('header').outerHeight();
-    $(window).on('load', function () {
+    $(document).ready(function () {
+    // $(window).on('load', function () {
         $('body').css('margin-top', headerH + 'px');
     })
 

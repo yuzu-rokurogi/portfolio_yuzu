@@ -8,6 +8,7 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   font-feature-settings: "palt";
+  overflow: visible;
 }
 
 
@@ -31,10 +32,13 @@
 
 body {
   position: relative;
+  width: 100%;
   font-size: 1.4rem;
   color: #18141B;
   background-color: #fff;
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
@@ -74,8 +78,10 @@ header {
   padding: 20px 0;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
   box-shadow: 0 1px 8px -4px rgba(0,0,0,15);
+  box-sizing: border-box;
   z-index: 10;
 
 
@@ -192,6 +198,8 @@ header {
 
     span {
       color: #C385F4;
+      font-size: 1.4rem;
+  
     }
   }
 
@@ -505,7 +513,9 @@ footer {
   transition : all 800ms;
 }
 
-.fadein.scrollin {
+.fadein.scrollin,
+.skillFadein.skillScrollin,
+.skillFadeinR.skillScrollin {
   opacity : 1;
   transform : translate(0, 0);
 }
@@ -522,8 +532,7 @@ footer {
   transition : all 800ms;
 }
 
-.skillFadein.skillScrollin,
-.skillFadeinR.skillScrollin {
-  opacity : 1;
-  transform : translate(0, 0);
+.skillFadein {
+  opacity : 0;
+  transform : translate(-80px, 0);
 }

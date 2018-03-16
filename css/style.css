@@ -78,72 +78,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   font-feature-settings: "palt";
+  overflow: visible;
 }
 
 @media screen and (min-width: 374px) {
-  /* line 15, ../sass/_other.scss */
+  /* line 16, ../sass/_other.scss */
   html {
     font-size: 62.5%;
   }
 }
 @media screen and (min-width: 414px) {
-  /* line 21, ../sass/_other.scss */
+  /* line 22, ../sass/_other.scss */
   html {
     font-size: 65%;
   }
 }
 @media screen and (min-width: 767px) {
-  /* line 27, ../sass/_other.scss */
+  /* line 28, ../sass/_other.scss */
   html {
     font-size: 85%;
   }
 }
-/* line 32, ../sass/_other.scss */
+/* line 33, ../sass/_other.scss */
 body {
   position: relative;
+  width: 100%;
   font-size: 1.4rem;
   color: #18141B;
   background-color: #fff;
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* line 40, ../sass/_other.scss */
+/* line 44, ../sass/_other.scss */
 a {
   color: #18141B;
   text-decoration: none;
 }
 
-/* line 45, ../sass/_other.scss */
+/* line 49, ../sass/_other.scss */
 img {
   display: block;
   width: 100%;
 }
 
-/* line 50, ../sass/_other.scss */
+/* line 54, ../sass/_other.scss */
 .fontOswald, header ul li a, .firstView .inner .titWrap, .profile .inner h2, .profile h3, .profile .works dl dt::before, .profile .works dl dd::before, .skill .inner h2, .skill h3, .skill dl dt, .contact h2, footer span {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.5px;
 }
 
-/* line 55, ../sass/_other.scss */
+/* line 59, ../sass/_other.scss */
 .w80 {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 60, ../sass/_other.scss */
+/* line 64, ../sass/_other.scss */
 .w85 {
   width: 85%;
   margin: 0 auto;
 }
 
-/* line 65, ../sass/_other.scss */
+/* line 69, ../sass/_other.scss */
 .w90 {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 70, ../sass/_other.scss */
+/* line 74, ../sass/_other.scss */
 header {
   width: 100%;
   height: 55px;
@@ -151,34 +155,36 @@ header {
   padding: 20px 0;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
   box-shadow: 0 1px 8px -4px black;
+  box-sizing: border-box;
   z-index: 10;
 }
-/* line 82, ../sass/_other.scss */
+/* line 88, ../sass/_other.scss */
 header ul {
   display: flex;
   justify-content: space-around;
 }
-/* line 87, ../sass/_other.scss */
+/* line 93, ../sass/_other.scss */
 header ul li a {
   font-size: 16px;
   line-height: 1;
   text-align: center;
 }
 
-/* line 97, ../sass/_other.scss */
+/* line 103, ../sass/_other.scss */
 .firstView {
   display: block;
   padding: 5% 0 30%;
   position: relative;
 }
-/* line 102, ../sass/_other.scss */
+/* line 108, ../sass/_other.scss */
 .firstView .inner {
   overflow: hidden;
   position: relative;
 }
-/* line 106, ../sass/_other.scss */
+/* line 112, ../sass/_other.scss */
 .firstView .inner .titWrap {
   display: block;
   position: absolute;
@@ -186,26 +192,26 @@ header ul li a {
   left: 8%;
   z-index: 2;
 }
-/* line 114, ../sass/_other.scss */
+/* line 120, ../sass/_other.scss */
 .firstView .inner .titWrap h1 {
   padding-bottom: 4%;
   font-size: 3.8rem;
   font-weight: 300;
 }
-/* line 120, ../sass/_other.scss */
+/* line 126, ../sass/_other.scss */
 .firstView .inner .titWrap p {
   display: inline-block;
   font-size: 2rem;
   padding-left: 2%;
 }
-/* line 127, ../sass/_other.scss */
+/* line 133, ../sass/_other.scss */
 .firstView .inner .imgWrap {
   display: block;
   font-size: 0;
   float: right;
   z-index: 1;
 }
-/* line 135, ../sass/_other.scss */
+/* line 141, ../sass/_other.scss */
 .firstView .scrollIcon {
   display: block;
   width: 10%;
@@ -219,7 +225,7 @@ header ul li a {
   bottom: 8%;
 }
 
-/* line 142, ../sass/_other.scss */
+/* line 148, ../sass/_other.scss */
 .fuwafuwa {
   -webkit-animation-name: fuwafuwa;
   -webkit-animation-duration: 2s;
@@ -253,19 +259,19 @@ header ul li a {
     -moz-transform: translate(0, 0);
   }
 }
-/* line 165, ../sass/_other.scss */
+/* line 171, ../sass/_other.scss */
 .profile {
   padding: 20% 0;
 }
-/* line 168, ../sass/_other.scss */
+/* line 174, ../sass/_other.scss */
 .profile .inner {
   position: relative;
 }
-/* line 171, ../sass/_other.scss */
+/* line 177, ../sass/_other.scss */
 .profile .inner .imgWrap {
   margin-left: 0;
 }
-/* line 175, ../sass/_other.scss */
+/* line 181, ../sass/_other.scss */
 .profile .inner h2 {
   font-size: 5rem;
   font-weight: 300;
@@ -273,7 +279,7 @@ header ul li a {
   top: 20%;
   right: 8%;
 }
-/* line 186, ../sass/_other.scss */
+/* line 192, ../sass/_other.scss */
 .profile .intro {
   padding: 10% 0;
   font-size: 1.4rem;
@@ -281,18 +287,19 @@ header ul li a {
   text-align: center;
   letter-spacing: 0.5px;
 }
-/* line 193, ../sass/_other.scss */
+/* line 199, ../sass/_other.scss */
 .profile .intro span {
   color: #C385F4;
+  font-size: 1.4rem;
 }
-/* line 198, ../sass/_other.scss */
+/* line 206, ../sass/_other.scss */
 .profile h3 {
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.5px;
   position: relative;
 }
-/* line 205, ../sass/_other.scss */
+/* line 213, ../sass/_other.scss */
 .profile h3::before {
   display: inline-block;
   content: '';
@@ -303,12 +310,12 @@ header ul li a {
   background-position: center;
   background-size: contain;
 }
-/* line 217, ../sass/_other.scss */
+/* line 225, ../sass/_other.scss */
 .profile .aboutMe {
   padding: 5% 0 10%;
   position: relative;
 }
-/* line 221, ../sass/_other.scss */
+/* line 229, ../sass/_other.scss */
 .profile .aboutMe::after {
   content: '';
   display: inline-block;
@@ -327,29 +334,29 @@ header ul li a {
   left: 50%;
   bottom: 0;
 }
-/* line 235, ../sass/_other.scss */
+/* line 243, ../sass/_other.scss */
 .profile .aboutMe .text {
   padding: 5% 4% 0;
   font-size: 1.5rem;
   line-height: 1.6;
   letter-spacing: 1px;
 }
-/* line 244, ../sass/_other.scss */
+/* line 252, ../sass/_other.scss */
 .profile .works dl {
   padding: 10% 4% 0;
 }
-/* line 247, ../sass/_other.scss */
+/* line 255, ../sass/_other.scss */
 .profile .works dl dt, .profile .works dl dd {
   padding-left: 8%;
   font-size: 1.5rem;
   letter-spacing: 1px;
   position: relative;
 }
-/* line 254, ../sass/_other.scss */
+/* line 262, ../sass/_other.scss */
 .profile .works dl dt {
   padding-bottom: 16px;
 }
-/* line 257, ../sass/_other.scss */
+/* line 265, ../sass/_other.scss */
 .profile .works dl dt::before {
   display: inline-block;
   content: 'Q.';
@@ -359,12 +366,12 @@ header ul li a {
   top: -10px;
   left: 0;
 }
-/* line 269, ../sass/_other.scss */
+/* line 277, ../sass/_other.scss */
 .profile .works dl dd {
   padding-bottom: 24px;
   line-height: 1.6;
 }
-/* line 273, ../sass/_other.scss */
+/* line 281, ../sass/_other.scss */
 .profile .works dl dd::before {
   display: inline-block;
   content: 'A.';
@@ -375,18 +382,18 @@ header ul li a {
   left: 0;
 }
 
-/* line 288, ../sass/_other.scss */
+/* line 296, ../sass/_other.scss */
 .skill {
   padding-bottom: 20%;
   background: linear-gradient(rgba(0, 0, 0, 0) 6%, #f4f2f7 0%);
   position: relative;
 }
-/* line 293, ../sass/_other.scss */
+/* line 301, ../sass/_other.scss */
 .skill .inner {
   overflow: hidden;
   position: relative;
 }
-/* line 297, ../sass/_other.scss */
+/* line 305, ../sass/_other.scss */
 .skill .inner h2 {
   font-size: 5rem;
   font-weight: 300;
@@ -395,13 +402,13 @@ header ul li a {
   left: 15%;
   z-index: 2;
 }
-/* line 307, ../sass/_other.scss */
+/* line 315, ../sass/_other.scss */
 .skill .inner .imgWrap {
   width: 70%;
   float: right;
   z-index: 1;
 }
-/* line 314, ../sass/_other.scss */
+/* line 322, ../sass/_other.scss */
 .skill .intro {
   padding: 10% 0;
   font-size: 1.4rem;
@@ -409,7 +416,7 @@ header ul li a {
   text-align: center;
   letter-spacing: 0.5px;
 }
-/* line 323, ../sass/_other.scss */
+/* line 331, ../sass/_other.scss */
 .skill ul li {
   width: 90%;
   padding: 15% 8%;
@@ -417,20 +424,20 @@ header ul li a {
   border-bottom: 1px solid #18141B;
   background-color: #fff;
 }
-/* line 330, ../sass/_other.scss */
+/* line 338, ../sass/_other.scss */
 .skill ul li:not(:first-child) {
   margin-top: 20%;
 }
-/* line 334, ../sass/_other.scss */
+/* line 342, ../sass/_other.scss */
 .skill ul li.right {
   margin-left: 10%;
   border-left: 1px solid #18141B;
 }
-/* line 339, ../sass/_other.scss */
+/* line 347, ../sass/_other.scss */
 .skill ul li.left {
   border-right: 1px solid #18141B;
 }
-/* line 345, ../sass/_other.scss */
+/* line 353, ../sass/_other.scss */
 .skill h3 {
   padding-bottom: 15px;
   font-size: 3rem;
@@ -438,7 +445,7 @@ header ul li a {
   letter-spacing: 0.5px;
   position: relative;
 }
-/* line 353, ../sass/_other.scss */
+/* line 361, ../sass/_other.scss */
 .skill h3::before {
   display: inline-block;
   content: '';
@@ -449,13 +456,13 @@ header ul li a {
   background-position: center;
   background-size: contain;
 }
-/* line 366, ../sass/_other.scss */
+/* line 374, ../sass/_other.scss */
 .skill dl dt {
   padding-bottom: 10px;
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
-/* line 372, ../sass/_other.scss */
+/* line 380, ../sass/_other.scss */
 .skill dl dt::before {
   content: "";
   width: 32px;
@@ -467,51 +474,51 @@ header ul li a {
   position: relative;
   top: 0.5em;
 }
-/* line 382, ../sass/_other.scss */
+/* line 390, ../sass/_other.scss */
 .skill dl dt.html5::before {
   background-image: url("../img/icon_html5.png");
 }
-/* line 386, ../sass/_other.scss */
+/* line 394, ../sass/_other.scss */
 .skill dl dt.css3::before {
   background-image: url("../img/icon_css3.png");
 }
-/* line 390, ../sass/_other.scss */
+/* line 398, ../sass/_other.scss */
 .skill dl dt.sass::before {
   background-image: url("../img/icon_sass.png");
 }
-/* line 394, ../sass/_other.scss */
+/* line 402, ../sass/_other.scss */
 .skill dl dt.jquery::before {
   background-image: url("../img/icon_jquery.png");
 }
-/* line 398, ../sass/_other.scss */
+/* line 406, ../sass/_other.scss */
 .skill dl dt.wordPress::before {
   background-image: url("../img/icon_wordpress.png");
 }
-/* line 402, ../sass/_other.scss */
+/* line 410, ../sass/_other.scss */
 .skill dl dt.photoshop::before {
   background-image: url("../img/icon_photoshop.png");
 }
-/* line 406, ../sass/_other.scss */
+/* line 414, ../sass/_other.scss */
 .skill dl dt.illustrator::before {
   background-image: url("../img/icon_illustrator.png");
 }
-/* line 410, ../sass/_other.scss */
+/* line 418, ../sass/_other.scss */
 .skill dl dt.sketch::before {
   background-image: url("../img/icon_sketch.png");
 }
-/* line 414, ../sass/_other.scss */
+/* line 422, ../sass/_other.scss */
 .skill dl dt.mac::before {
   background-image: url("../img/icon_mac.png");
 }
-/* line 418, ../sass/_other.scss */
+/* line 426, ../sass/_other.scss */
 .skill dl dt.git::before {
   background-image: url("../img/icon_git.png");
 }
-/* line 422, ../sass/_other.scss */
+/* line 430, ../sass/_other.scss */
 .skill dl dt.slack::before {
   background-image: url("../img/icon_slack.png");
 }
-/* line 427, ../sass/_other.scss */
+/* line 435, ../sass/_other.scss */
 .skill dl dd {
   padding-bottom: 15px;
   font-size: 1.5rem;
@@ -519,57 +526,57 @@ header ul li a {
   letter-spacing: 1px;
 }
 
-/* line 436, ../sass/_other.scss */
+/* line 444, ../sass/_other.scss */
 .contact {
   padding: 15% 0;
 }
-/* line 438, ../sass/_other.scss */
+/* line 446, ../sass/_other.scss */
 .contact h2 {
   padding-bottom: 10%;
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
 }
-/* line 446, ../sass/_other.scss */
+/* line 454, ../sass/_other.scss */
 .contact p {
   font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 1px;
 }
-/* line 453, ../sass/_other.scss */
+/* line 461, ../sass/_other.scss */
 .contact ul {
   width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-/* line 459, ../sass/_other.scss */
+/* line 467, ../sass/_other.scss */
 .contact ul li {
   padding: 5%;
 }
-/* line 462, ../sass/_other.scss */
+/* line 470, ../sass/_other.scss */
 .contact ul li a {
   display: block;
 }
 
-/* line 469, ../sass/_other.scss */
+/* line 477, ../sass/_other.scss */
 .goTop {
   padding-bottom: 8%;
 }
-/* line 471, ../sass/_other.scss */
+/* line 479, ../sass/_other.scss */
 .goTop a {
   width: 15%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 478, ../sass/_other.scss */
+/* line 486, ../sass/_other.scss */
 footer {
   padding: 8px 0;
   background-color: #F0EFF0;
 }
-/* line 482, ../sass/_other.scss */
+/* line 490, ../sass/_other.scss */
 footer span {
   display: block;
   font-size: 1.1rem;
@@ -577,7 +584,7 @@ footer span {
   text-align: center;
 }
 
-/* line 491, ../sass/_other.scss */
+/* line 499, ../sass/_other.scss */
 .block-revealer__element {
   position: absolute;
   top: 0;
@@ -589,36 +596,37 @@ footer span {
   opacity: 0;
 }
 
-/* line 502, ../sass/_other.scss */
+/* line 510, ../sass/_other.scss */
 .fadein {
   opacity: 0;
   transform: translate(0, 24px);
   transition: all 800ms;
 }
 
-/* line 508, ../sass/_other.scss */
-.fadein.scrollin {
+/* line 516, ../sass/_other.scss */
+.fadein.scrollin,
+.skillFadein.skillScrollin,
+.skillFadeinR.skillScrollin {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-/* line 513, ../sass/_other.scss */
+/* line 523, ../sass/_other.scss */
 .skillFadein {
   opacity: 0;
   transform: translate(-80px, 0);
   transition: all 800ms;
 }
 
-/* line 519, ../sass/_other.scss */
+/* line 529, ../sass/_other.scss */
 .skillFadeinR {
   opacity: 0;
   transform: translate(80px, 0);
   transition: all 800ms;
 }
 
-/* line 525, ../sass/_other.scss */
-.skillFadein.skillScrollin,
-.skillFadeinR.skillScrollin {
-  opacity: 1;
-  transform: translate(0, 0);
+/* line 535, ../sass/_other.scss */
+.skillFadein {
+  opacity: 0;
+  transform: translate(-80px, 0);
 }
