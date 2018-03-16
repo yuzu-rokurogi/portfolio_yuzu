@@ -1,33 +1,35 @@
-$(function() {
-	// contents padding
-	var windowH =$(window).height();
-	var headerH = $('header').outerHeight();
-	var footerH = $('footer').outerHeight();
-	var spaceH = windowH - (headerH + footerH);
-	var contentsH = $('.cmnAllWrap').outerHeight();
+$(function () {
+    var headerH = $('header').outerHeight();
+    $(window).on('load', function () {
+        $('body').css('margin-top', headerH + 'px');
+    })
 
-	if ($('#pankuzu').length) {
-		$('#pankuzu').css('padding-top', headerH);
-	} else {
-		$('.cmnAllWrap').css('padding-top', headerH);
-	}
+    $('a[href^="#"]').on('click', function(){
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - headerH;
+        $("html, body").stop().animate({scrollTop:position}, speed);
+        return false;
+    });
 
-	if (contentsH < spaceH) {
-		$('.cmnAllWrap').css('min-height', spaceH);
-	}
+    $(window).on('scroll', function () {
+        $('.fadein').each(function () {
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 200) {
+                $(this).addClass('scrollin');
+            }
+        });
 
-	$('.worksDetail dd .tit').on('click', function(){
-		$(this).next().stop().slideToggle(500);
-		$(this).toggleClass('open');
-});
-
-
-$('a[href^=#]').click(function() {
-		 var speed = 400;
-		 var href= $(this).attr("href");
-		 var target = $(href == "#" || href == "" ? 'html' : href);
-		 var position = target.offset().top;
-		 $('body,html').animate({scrollTop:position}, speed, 'swing');
-		 return false;
-});
+        $('.skillFadein, .skillFadeinR').each(function () {
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 200) {
+                $(this).addClass('skillScrollin');
+            }
+        });
+    });
 });

@@ -286,7 +286,7 @@ header {
 }
 
 .skill {
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   background: linear-gradient(transparent 6%, #F4F2F7 0%);
   position: relative;
 
@@ -497,4 +497,33 @@ footer {
   background: #000;
   pointer-events: none;
   opacity: 0;
+}
+
+.fadein {
+  opacity : 0;
+  transform : translate(0, 24px);
+  transition : all 800ms;
+}
+
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+.skillFadein {
+  opacity : 0;
+  transform : translate(-80px, 0);
+  transition : all 800ms;
+}
+
+.skillFadeinR {
+  opacity : 0;
+  transform : translate(80px, 0);
+  transition : all 800ms;
+}
+
+.skillFadein.skillScrollin,
+.skillFadeinR.skillScrollin {
+  opacity : 1;
+  transform : translate(0, 0);
 }

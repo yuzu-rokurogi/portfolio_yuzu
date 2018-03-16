@@ -5,7 +5,6 @@
 	<title>Yuzu Haramaki Portfolio Site</title>
 	<meta name="description" content="はらまき ゆずのポートフォリオサイト">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/cmn.js"></script>
@@ -51,7 +50,7 @@
         Profile
       </h2>
     </div>
-    <div id="" class="aboutMe w90">
+    <div class="aboutMe w90 fadein">
       <p class="intro">
         はじめまして。<span>はらまき ゆずです。</span><br>
         都内で働く駆け出しWebデザイナーです。
@@ -65,7 +64,7 @@
         趣味はアニメ・ゲーム・買い物・キャラクターグッズ集め・ヨガ・スノボ
       </p>
     </div>
-    <div class="works w90">
+    <div class="works w90 fadein">
       <p class="intro">
         異業種からweb業界に飛び込んだ<br>
         私についての色々です
@@ -109,11 +108,11 @@
         <img src="img/skill.jpg">
       </div>
     </div>
-    <p class="intro">
+    <p class="intro fadein">
       いまの私にできる事―
     </p>
     <ul>
-      <li class="left">
+      <li class="left skillFadein">
         <h3>
           Coding
         </h3>
@@ -150,7 +149,7 @@
           </dd>
         </dl>
       </li>
-      <li class="right">
+      <li class="right skillFadeinR">
         <h3>
           Design
         </h3>
@@ -175,7 +174,7 @@
           </dd>
         </dl>
       </li>
-      <li class="left">
+      <li class="left skillFadein">
         <h3>
           Tool
         </h3>
@@ -244,23 +243,7 @@
   <script type="text/javascript" src="js/plugin/scrollMonitor.js"></script>
   <script type="text/javascript" src="js/plugin/main.js"></script>
 <script>
-	$(function () {
-	    var headerH = $('header').outerHeight();
-	    $(window).on('load', function () {
-          $('body').css('margin-top', headerH + 'px');
-      })
-
-      $('a[href^="#"]').on('click', function(){
-          var speed = 400;
-          var href= $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top - headerH;
-          $("html, body").stop().animate({scrollTop:position}, speed);
-          return false;
-      });
-	});
-
-  (function() {
+  $(function() {
       setTimeout(moveTit1, 100);
       function moveTit1() {
           var scrollElemToWatch_1 = document.getElementById('title01'),
@@ -472,7 +455,7 @@
               watcher_1.destroy();
           });
       }
-  })();
+  });
 </script>
 
 </body>
