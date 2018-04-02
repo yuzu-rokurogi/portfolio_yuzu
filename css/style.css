@@ -416,7 +416,11 @@ header ul li a {
   text-align: center;
   letter-spacing: 0.5px;
 }
-/* line 331, ../sass/_other.scss */
+/* line 330, ../sass/_other.scss */
+.skill ul {
+  overflow-x: auto;
+}
+/* line 333, ../sass/_other.scss */
 .skill ul li {
   width: 90%;
   padding: 15% 8%;
@@ -424,20 +428,21 @@ header ul li a {
   border-bottom: 1px solid #18141B;
   background-color: #fff;
 }
-/* line 338, ../sass/_other.scss */
+/* line 340, ../sass/_other.scss */
 .skill ul li:not(:first-child) {
   margin-top: 20%;
 }
-/* line 342, ../sass/_other.scss */
+/* line 344, ../sass/_other.scss */
 .skill ul li.right {
   margin-left: 10%;
   border-left: 1px solid #18141B;
+  overflow-x: hidden;
 }
-/* line 347, ../sass/_other.scss */
+/* line 350, ../sass/_other.scss */
 .skill ul li.left {
   border-right: 1px solid #18141B;
 }
-/* line 353, ../sass/_other.scss */
+/* line 356, ../sass/_other.scss */
 .skill h3 {
   padding-bottom: 15px;
   font-size: 3rem;
@@ -445,7 +450,7 @@ header ul li a {
   letter-spacing: 0.5px;
   position: relative;
 }
-/* line 361, ../sass/_other.scss */
+/* line 364, ../sass/_other.scss */
 .skill h3::before {
   display: inline-block;
   content: '';
@@ -456,13 +461,13 @@ header ul li a {
   background-position: center;
   background-size: contain;
 }
-/* line 374, ../sass/_other.scss */
+/* line 377, ../sass/_other.scss */
 .skill dl dt {
   padding-bottom: 10px;
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
-/* line 380, ../sass/_other.scss */
+/* line 383, ../sass/_other.scss */
 .skill dl dt::before {
   content: "";
   width: 32px;
@@ -474,51 +479,51 @@ header ul li a {
   position: relative;
   top: 0.5em;
 }
-/* line 390, ../sass/_other.scss */
+/* line 393, ../sass/_other.scss */
 .skill dl dt.html5::before {
   background-image: url("../img/icon_html5.png");
 }
-/* line 394, ../sass/_other.scss */
+/* line 397, ../sass/_other.scss */
 .skill dl dt.css3::before {
   background-image: url("../img/icon_css3.png");
 }
-/* line 398, ../sass/_other.scss */
+/* line 401, ../sass/_other.scss */
 .skill dl dt.sass::before {
   background-image: url("../img/icon_sass.png");
 }
-/* line 402, ../sass/_other.scss */
+/* line 405, ../sass/_other.scss */
 .skill dl dt.jquery::before {
   background-image: url("../img/icon_jquery.png");
 }
-/* line 406, ../sass/_other.scss */
+/* line 409, ../sass/_other.scss */
 .skill dl dt.wordPress::before {
   background-image: url("../img/icon_wordpress.png");
 }
-/* line 410, ../sass/_other.scss */
+/* line 413, ../sass/_other.scss */
 .skill dl dt.photoshop::before {
   background-image: url("../img/icon_photoshop.png");
 }
-/* line 414, ../sass/_other.scss */
+/* line 417, ../sass/_other.scss */
 .skill dl dt.illustrator::before {
   background-image: url("../img/icon_illustrator.png");
 }
-/* line 418, ../sass/_other.scss */
+/* line 421, ../sass/_other.scss */
 .skill dl dt.sketch::before {
   background-image: url("../img/icon_sketch.png");
 }
-/* line 422, ../sass/_other.scss */
+/* line 425, ../sass/_other.scss */
 .skill dl dt.mac::before {
   background-image: url("../img/icon_mac.png");
 }
-/* line 426, ../sass/_other.scss */
+/* line 429, ../sass/_other.scss */
 .skill dl dt.git::before {
   background-image: url("../img/icon_git.png");
 }
-/* line 430, ../sass/_other.scss */
+/* line 433, ../sass/_other.scss */
 .skill dl dt.slack::before {
   background-image: url("../img/icon_slack.png");
 }
-/* line 435, ../sass/_other.scss */
+/* line 438, ../sass/_other.scss */
 .skill dl dd {
   padding-bottom: 15px;
   font-size: 1.5rem;
@@ -526,57 +531,57 @@ header ul li a {
   letter-spacing: 1px;
 }
 
-/* line 444, ../sass/_other.scss */
+/* line 447, ../sass/_other.scss */
 .contact {
   padding: 15% 0;
 }
-/* line 446, ../sass/_other.scss */
+/* line 449, ../sass/_other.scss */
 .contact h2 {
   padding-bottom: 10%;
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
 }
-/* line 454, ../sass/_other.scss */
+/* line 457, ../sass/_other.scss */
 .contact p {
   font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 1px;
 }
-/* line 461, ../sass/_other.scss */
+/* line 464, ../sass/_other.scss */
 .contact ul {
   width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-/* line 467, ../sass/_other.scss */
+/* line 470, ../sass/_other.scss */
 .contact ul li {
   padding: 5%;
 }
-/* line 470, ../sass/_other.scss */
+/* line 473, ../sass/_other.scss */
 .contact ul li a {
   display: block;
 }
 
-/* line 477, ../sass/_other.scss */
+/* line 480, ../sass/_other.scss */
 .goTop {
   padding-bottom: 8%;
 }
-/* line 479, ../sass/_other.scss */
+/* line 482, ../sass/_other.scss */
 .goTop a {
   width: 15%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 486, ../sass/_other.scss */
+/* line 489, ../sass/_other.scss */
 footer {
   padding: 8px 0;
   background-color: #F0EFF0;
 }
-/* line 490, ../sass/_other.scss */
+/* line 493, ../sass/_other.scss */
 footer span {
   display: block;
   font-size: 1.1rem;
@@ -584,7 +589,7 @@ footer span {
   text-align: center;
 }
 
-/* line 499, ../sass/_other.scss */
+/* line 502, ../sass/_other.scss */
 .block-revealer__element {
   position: absolute;
   top: 0;
@@ -596,37 +601,35 @@ footer span {
   opacity: 0;
 }
 
-/* line 510, ../sass/_other.scss */
+/* line 513, ../sass/_other.scss */
 .fadein {
   opacity: 0;
   transform: translate(0, 24px);
   transition: all 800ms;
 }
 
-/* line 516, ../sass/_other.scss */
+/* line 519, ../sass/_other.scss */
 .fadein.scrollin,
 .skillFadein.skillScrollin,
 .skillFadeinR.skillScrollin {
+  display: block;
   opacity: 1;
+  transition: all 1s;
   transform: translate(0, 0);
 }
 
-/* line 523, ../sass/_other.scss */
+/* line 528, ../sass/_other.scss */
 .skillFadein {
+  display: block;
   opacity: 0;
   transform: translate(-80px, 0);
-  transition: all 800ms;
-}
-
-/* line 529, ../sass/_other.scss */
-.skillFadeinR {
-  opacity: 0;
-  transform: translate(80px, 0);
   transition: all 800ms;
 }
 
 /* line 535, ../sass/_other.scss */
-.skillFadein {
+.skillFadeinR {
+  display: block;
   opacity: 0;
-  transform: translate(-80px, 0);
+  transform: translate(80px, 0);
+  transition: all 800ms;
 }
