@@ -12,21 +12,53 @@
 </head>
 <body>
 	<header>
-    <ul>
-      <li>
-        <a href="#">TOP</a>
-      </li>
-      <li>
-        <a href="#profile">Profile</a>
-      </li>
-      <li>
-        <a href="#skill">Skill</a>
-      </li>
-    </ul>
+    <div class="spHeader">
+      <div class="logo">
+        <a href="#">
+          <img class="motif" src="img/tit_motif.png" alt="Yuzu Haramaki">
+          Yuzu Haramaki
+        </a>
+      </div>
+      <div class="menu">
+        <img class="" src="img/menu.png" alt="MENU">
+      </div>
+      <ul>
+        <li>
+          <a href="#profile">Profile</a>
+        </li>
+        <li>
+          <a href="#skill">Skill</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pcHeader">
+      <div class="inner">
+        <div class="logo">
+          <a href="#">
+            <img class="motif" src="img/tit_motif.png" alt="Yuzu Haramaki">
+            Yuzu Haramaki
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="#profile">Profile</a>
+          </li>
+          <li>
+            <a href="#skill">Skill</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 	</header>
   <section class="firstView">
     <div class="inner">
-      <div class="titWrap" >
+      <div class="titWrap">
         <h1 id="title01">
           Yuzu Haramaki
         </h1>
@@ -45,15 +77,16 @@
   <section id="profile" class="profile">
     <div class="inner">
       <div id="image02" class="imgWrap w80">
-        <img src="img/yuzupon_sp.png" alt="">
+        <img class="spImg" src="img/yuzu_sp.png" alt="">
+        <img class="pcImg" src="img/yuzu_pc.jpg" alt="">
       </div>
-      <h2 id="title03">
+      <h2 class="tit" id="title03">
         Profile
       </h2>
     </div>
     <div class="aboutMe w90 fadein">
       <p class="intro">
-        はじめまして。<span>はらまき ゆずです。</span><br>
+        はじめまして。<span class="color">はらまき ゆず</span>です。<br>
         都内で働く駆け出しWebデザイナーです。
       </p>
       <h3>
@@ -104,7 +137,7 @@
   </section>
   <section id="skill" class="skill">
     <div class="inner">
-      <h2 id="title04">Skill</h2>
+      <h2 id="title04" class="tit">Skill</h2>
       <div id="image03" class="imgWrap">
         <img src="img/skill.jpg">
       </div>
@@ -112,125 +145,225 @@
     <p class="intro fadein">
       いまの私にできる事―
     </p>
-    <ul>
-      <li class="left skillFadein">
-        <h3>
-          Coding
-        </h3>
-        <dl>
-          <dt class="html5">
-            html5
-          </dt>
-          <dd>
-            webサイト丸ごとからLPまで、基本的なコーディングが可能です。
-          </dd>
-          <dt class="css3">
-            css3
-          </dt>
-          <dd>
-            デザインにもよりますが、画像はなるべく使わずcssで作れるものは極力cssで作る事を心がけています。
-          </dd>
-          <dt class="sass">
-            Sass
-          </dt>
-          <dd>
-            scss記法を使用しています。変数やmixinも使用しながらコーディングしています
-          </dd>
-          <dt class="jquery">
-            jQuery
-          </dt>
-          <dd>
-            モーダルやスライダー等のプラグインの実装が可能です。
-          </dd>
-          <dt class="wordPress">
-            WordPress
-          </dt>
-          <dd>
-            0からのテーマ作成やカスタマイズの経験があります。
-          </dd>
-        </dl>
-      </li>
-      <li class="right skillFadeinR">
-        <h3>
-          Design
-        </h3>
-        <dl>
-          <dt class="photoshop">
-            Photoshop
-          </dt>
-          <dd>
-            画像の書き出しなど、コーディングする際に必要な操作は可能です。
-          </dd>
-          <dt class="illustrator">
-            Illustrator
-          </dt>
-          <dd>
-            簡単な名刺を作れる程度なのでロゴ作成など色々と挑戦しています。
-          </dd>
-          <dt class="sketch">
-            Sketch
-          </dt>
-          <dd>
-            前職ではSketchを使う機会がなかったので、今回このWebサイトはSketchで作成してみました。
-          </dd>
-        </dl>
-      </li>
-      <li class="left skillFadein">
-        <h3>
-          Tool
-        </h3>
-        <dl>
-          <dt class="mac">
-            Mac
-          </dt>
-          <dd>
-            開発環境はMacbook pro。
-            過去にWindowsマシンを使用していたこともあります。
-          </dd>
-          <dt class="git">
-            git
-          </dt>
-          <dd>
-            バージョン管理はgitを使用しています。
-            コマンドではなくSourcetreeを使用しています。
-          </dd>
-          <dt class="slack">
-            Slack
-          </dt>
-          <dd>
-            連絡や情報共有にはSlackを使用していますが、必要に応じて他のチャットツールも使用しています。
-          </dd>
-        </dl>
-      </li>
-    </ul>
+    <div class="spContents">
+      <ul>
+        <li class="left skillFadein">
+          <h3>
+            Coding
+          </h3>
+          <dl>
+            <dt class="html5">
+              html5
+            </dt>
+            <dd>
+              webサイト丸ごとからLPまで、基本的なコーディングが可能です。
+            </dd>
+            <dt class="css3">
+              css3
+            </dt>
+            <dd>
+              デザインにもよりますが、画像はなるべく使わずcssで作れるものは極力cssで作る事を心がけています。
+            </dd>
+            <dt class="sass">
+              Sass
+            </dt>
+            <dd>
+              scss記法を使用しています。変数やmixinも使用しながらコーディングしています
+            </dd>
+            <dt class="jquery">
+              jQuery
+            </dt>
+            <dd>
+              モーダルやスライダー等のプラグインの実装が可能です。
+            </dd>
+            <dt class="wordPress">
+              WordPress
+            </dt>
+            <dd>
+              0からのテーマ作成やカスタマイズの経験があります。
+            </dd>
+          </dl>
+        </li>
+        <li class="right skillFadeinR">
+          <h3>
+            Design
+          </h3>
+          <dl>
+            <dt class="photoshop">
+              Photoshop
+            </dt>
+            <dd>
+              画像の書き出しなど、コーディングする際に必要な操作は可能です。
+            </dd>
+            <dt class="illustrator">
+              Illustrator
+            </dt>
+            <dd>
+              簡単な名刺を作れる程度なのでロゴ作成など色々と挑戦しています。
+            </dd>
+            <dt class="sketch">
+              Sketch
+            </dt>
+            <dd>
+              前職ではSketchを使う機会がなかったので、今回このWebサイトはSketchで作成してみました。
+            </dd>
+          </dl>
+        </li>
+        <li class="left skillFadein">
+          <h3>
+            Tool
+          </h3>
+          <dl>
+            <dt class="mac">
+              Mac
+            </dt>
+            <dd>
+              開発環境はMacbook pro。
+              過去にWindowsマシンを使用していたこともあります。
+            </dd>
+            <dt class="git">
+              git
+            </dt>
+            <dd>
+              バージョン管理はgitを使用しています。
+              コマンドではなくSourcetreeを使用しています。
+            </dd>
+            <dt class="slack">
+              Slack
+            </dt>
+            <dd>
+              連絡や情報共有にはSlackを使用していますが、必要に応じて他のチャットツールも使用しています。
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="pcContents">
+      <ul>
+        <li class="fadein">
+          <h3>
+            Coding
+          </h3>
+          <dl>
+            <dt class="html5">
+              html5
+            </dt>
+            <dd>
+              webサイト丸ごとからLPまで、基本的なコーディングが可能です。
+            </dd>
+            <dt class="css3">
+              css3
+            </dt>
+            <dd>
+              デザインにもよりますが、画像はなるべく使わずcssで作れるものは極力cssで作る事を心がけています。
+            </dd>
+            <dt class="sass">
+              Sass
+            </dt>
+            <dd>
+              scss記法を使用しています。変数やmixinも使用しながらコーディングしています
+            </dd>
+            <dt class="jquery">
+              jQuery
+            </dt>
+            <dd>
+              モーダルやスライダー等のプラグインの実装が可能です。
+            </dd>
+            <dt class="wordPress">
+              WordPress
+            </dt>
+            <dd>
+              0からのテーマ作成やカスタマイズの経験があります。
+            </dd>
+          </dl>
+        </li>
+        <li class="fadein">
+          <h3>
+            Design
+          </h3>
+          <dl>
+            <dt class="photoshop">
+              Photoshop
+            </dt>
+            <dd>
+              画像の書き出しなど、コーディングする際に必要な操作は可能です。
+            </dd>
+            <dt class="illustrator">
+              Illustrator
+            </dt>
+            <dd>
+              簡単な名刺を作れる程度なのでロゴ作成など色々と挑戦しています。
+            </dd>
+            <dt class="sketch">
+              Sketch
+            </dt>
+            <dd>
+              前職ではSketchを使う機会がなかったので、今回このWebサイトはSketchで作成してみました。
+            </dd>
+          </dl>
+        </li>
+        <li class="fadein">
+          <h3>
+            Tool
+          </h3>
+          <dl>
+            <dt class="mac">
+              Mac
+            </dt>
+            <dd>
+              開発環境はMacbook pro。
+              過去にWindowsマシンを使用していたこともあります。
+            </dd>
+            <dt class="git">
+              git
+            </dt>
+            <dd>
+              バージョン管理はgitを使用しています。
+              コマンドではなくSourcetreeを使用しています。
+            </dd>
+            <dt class="slack">
+              Slack
+            </dt>
+            <dd>
+              連絡や情報共有にはSlackを使用していますが、必要に応じて他のチャットツールも使用しています。
+            </dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="works">
+        <a class="link" href="">
+          過去の制作物は<span class="color">こちら</span>→
+        </a>
+      </div>
+    </div>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>
       Contact
     </h2>
-    <p>
+    <p class="comment">
       お問合わせ・フォロー<br>
       お気軽にお待ちしております
     </p>
     <ul>
       <li>
-        <a>
+        <a href="">
           <img src="img/icon_mail.png" alt="mail">
         </a>
       </li>
       <li>
-        <a>
+        <a href="">
           <img src="img/icon_facebook.png" alt="Facebook">
         </a>
       </li>
       <li>
-        <a>
+        <a href="">
           <img src="img/icon_twitter.png" alt="Twitter">
         </a>
       </li>
     </ul>
   </section>
-  <div class="goTop">
+  <div class="goTop spContents">
     <a href="#">
       <img src="img/top.png" alt="TOP">
     </a>

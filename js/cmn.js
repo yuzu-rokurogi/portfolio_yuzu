@@ -3,6 +3,7 @@ $(function () {
     $(document).ready(function () {
     // $(window).on('load', function () {
         $('body').css('margin-top', headerH + 'px');
+        console.log(headerH);
     })
 
     $('a[href^="#"]').on('click', function(){
