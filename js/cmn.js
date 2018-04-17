@@ -1,10 +1,20 @@
 $(function () {
     var headerH = $('header').outerHeight();
     $(document).ready(function () {
-    // $(window).on('load', function () {
         $('body').css('margin-top', headerH + 'px');
-        console.log(headerH);
     })
+
+    $('nav').hide();
+    $('.menu').on('click', function(){
+        $(this).toggleClass('is-active');
+        $('nav').slideToggle();
+    });
+
+    $('nav').on('click', function(){
+        $('.menu').removeClass('is-active');
+        $('nav').hide();
+        console.log(this);
+    });
 
     $('a[href^="#"]').on('click', function(){
         var speed = 400;

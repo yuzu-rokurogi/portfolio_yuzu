@@ -6,33 +6,40 @@
 	<meta name="description" content="はらまき ゆずのポートフォリオサイト">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">-->
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/cmn.js"></script>
 </head>
 <body>
 	<header>
     <div class="spHeader">
-      <div class="logo">
-        <a href="#">
-          <img class="motif" src="img/tit_motif.png" alt="Yuzu Haramaki">
-          Yuzu Haramaki
-        </a>
+      <div class="inner">
+        <div class="logo">
+          <a href="#">
+            <img class="motif" src="img/tit_motif.png" alt="Yuzu Haramaki">
+            Yuzu Haramaki
+          </a>
+        </div>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="menu">
-        <img class="" src="img/menu.png" alt="MENU">
-      </div>
-      <ul>
-        <li>
-          <a href="#profile">Profile</a>
-        </li>
-        <li>
-          <a href="#skill">Skill</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <nav class="globalMenu">
+        <ul>
+          <li>
+            <a href="#profile">Profile</a>
+          </li>
+          <li>
+            <a href="#skill">Skill</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="pcHeader">
       <div class="inner">
@@ -98,7 +105,7 @@
         趣味はアニメ・ゲーム・買い物・キャラクターグッズ集め・ヨガ・スノボ
       </p>
     </div>
-    <div class="works w90 fadein">
+    <div class="worksQA w90 fadein">
       <p class="intro">
         異業種からweb業界に飛び込んだ<br>
         私についての色々です
@@ -237,6 +244,11 @@
           </dl>
         </li>
       </ul>
+      <div class="works">
+        <a class="link" href="works.html">
+          過去の制作物は<span class="color">こちら</span>→
+        </a>
+      </div>
     </div>
     <div class="pcContents">
       <ul>
@@ -331,7 +343,7 @@
         </li>
       </ul>
       <div class="works">
-        <a class="link" href="">
+        <a class="link" href="works.html">
           過去の制作物は<span class="color">こちら</span>→
         </a>
       </div>
@@ -591,5 +603,4 @@
       }
   });
 </script>
-
 </body>

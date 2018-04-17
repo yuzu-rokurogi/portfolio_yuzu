@@ -12,13 +12,13 @@
 }
 
 
-@media screen and (min-width: 374px) {
+@media screen and (max-width: 374px) {
   html {
-    font-size: 62.5%;
+    font-size: 54.5%;
   }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 375px) {
   html {
     font-size: 65%;
   }
@@ -97,13 +97,18 @@ img {
   }
   
   .spHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    
+    .inner {
+      padding: 10px 20px;
+      overflow: hidden;
+    }
   
     
     .logo {
+      float: left;
       cursor: pointer;
 
       a {
@@ -120,21 +125,74 @@ img {
     
     .menu {
       width: 30px;
+      float: right;
+      margin-top: 5px;
+      cursor: pointer;
+      position: relative;
+      
+      span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        background: red;
+        
+        &:first-child {
+          top: 0;
+        }
+        
+        &:nth-child(2) {
+          top: 8px;
+        }
+        
+        &:last-child {
+          top: 16px;
+        }
+      }
+      
+      &.is-active span {
+        &:first-child {
+          top: 7px;
+          transform: rotate(-45deg);
+          transition: .5s;
+        }
+        
+        &:nth-child(2) {
+          display: none;
+        }
+        
+        &:last-child {
+          top: 7px;
+          transform: rotate(45deg);
+          transition: .5s;
+        }
+      }
     }
     
-    ul {
-      display: none;
-      //display: flex;
-      //justify-content: space-around;
-      //
-      //li {
-      //  a {
-      //    @extend .fontOswald;
-      //    font-size: 16px;
-      //    line-height: 1;
-      //    text-align: center;
-      //  }
-      //}
+    .open {
+    }
+  
+    .close {
+    }
+  
+  
+    .globalMenu {
+      //display: none;
+      background: #7a787b;
+      
+      ul {
+        width: 100%;
+        
+        li {
+          a {
+            @extend .fontOswald;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 1;
+            text-align: center;
+          }
+        }
+      }
     }
   }
   
@@ -267,7 +325,7 @@ img {
       }
     }
     
-    .works {
+    .worksQA {
       dl {
         padding: 10% 4% 0;
         
@@ -475,12 +533,12 @@ img {
       
       .link {
         display: inline-block;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         letter-spacing: .5px;
         
         .color {
           color: #C385F4;
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           font-weight: bold;
         }
       }
@@ -527,6 +585,120 @@ img {
       width: 15%;
       display: block;
       margin: 0 auto;
+    }
+  }
+  
+  .works {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% 0 12%;
+    
+    .tit {
+      @extend .fontOswald;
+      padding-bottom: 10%;
+      font-size: 4rem;
+      font-weight: 200;
+      text-align: center;
+    }
+    
+    dl {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0;
+      
+      dt,dd {
+        display: block;
+      }
+      
+      dt {
+        &:not(:first-child) {
+          padding-top: 10px;
+        }
+        font-size: 1.2rem;
+      }
+      
+      dd {
+        .item {
+          position: relative;
+          border-bottom: 1px solid;
+          cursor: pointer;
+          
+          &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border: 0px;
+            border-bottom: solid 2px #38374f;
+            border-right: solid 2px #38374f;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            margin-top: -6px;
+          }
+          
+          a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            vertical-align: middle;
+          }
+          
+          p {
+            display: inline-block;
+            padding: 8px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            vertical-align: middle;
+          }
+        }
+        
+        .detail {
+          display: none;
+          padding: 10px 8px;
+          
+          p {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            
+            .bold {
+              display: block;
+              font-weight: bold;
+            }
+            
+            a {
+              display: inline-block;
+            }
+          }
+        }
+        
+        .open {
+          display: block;
+        }
+      }
+    }
+    
+    .return {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 32px;
+      text-align: right;
+      
+      .link {
+        font-size: 1.4rem;
+        position: relative;
+        
+        .color {
+          color: #C385F4;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -686,7 +858,7 @@ img {
     }
     
     .aboutMe,
-    .works {
+    .worksQA {
       width: 640px;
       margin: 0 auto;
       padding: 64px 0 104px;
@@ -730,7 +902,7 @@ img {
         line-height: 1.7;
       }
   
-    .works {
+    .worksQA {
       dl {
         padding: 56px 0 0 64px;
       
@@ -973,6 +1145,144 @@ img {
   }
   .spContents {
     display: none;
+  }
+  
+  .works {
+    width: 720px;
+    margin: 0 auto;
+    padding: 64px 0 102px;
+    
+    .tit {
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    
+    dl {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      font-size: 0;
+      
+      dt,dd {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      dt {
+        width: 20%;
+        padding: 5px 0;
+        font-size: 1.2rem;
+      }
+      
+      dd {
+        width: 80%;
+        
+        .item {
+          position: relative;
+          padding-left: 5px;
+          border-bottom: 1px solid;
+          cursor: pointer;
+          
+          &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border: 0px;
+            border-bottom: solid 2px #38374f;
+            border-right: solid 2px #38374f;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            margin-top: -6px;
+          }
+          
+          &:hover {
+            background: rgba(244, 242, 247, 0.76);
+            transition: 0.5s;
+          }
+          
+          a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            vertical-align: middle;
+            
+            &:hover {
+              background: #faff34;
+              transition: .5s;
+            }
+          }
+          
+          p {
+            display: inline-block;
+            padding: 8px 5px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            vertical-align: middle;
+          }
+        }
+        
+        .detail {
+          display: none;
+          padding: 10px 0;
+          
+          p {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            
+            .bold {
+              display: block;
+              font-weight: bold;
+            }
+            
+            a {
+              display: inline-block;
+            }
+          }
+        }
+        
+        .open {
+          display: block;
+        }
+      }
+    }
+  
+    .return {
+      padding-top: 32px;
+      text-align: right;
+    
+      .link {
+        font-size: 1.2rem;
+        position: relative;
+        
+        .color {
+          color: #C385F4;
+          font-weight: bold;
+        }
+      
+        &::before {
+          position: absolute;
+          top: 1.2em;
+          right: 0;
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 1px;
+          background: #7a787b;
+          transition: .5s;
+        }
+      }
+  
+      .link:hover::before{
+        width: 100%;
+      }
+    }
   }
 }
 
