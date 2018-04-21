@@ -11,7 +11,6 @@
   overflow: visible;
 }
 
-
 @media screen and (max-width: 374px) {
   html {
     font-size: 54.5%;
@@ -48,7 +47,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.64);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 8px -4px rgba(0,0,0,15);
   box-sizing: border-box;
   z-index: 10;
@@ -63,13 +62,14 @@ img {
   display: block;
   width: 100%;
 }
-//
-//.fontOswald {
-//  font-family: 'Oswald', sans-serif;
-//  letter-spacing: 0.5px;
-//}
 
-// SP tablet
+.fontOswald {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 200;
+}
+
+// SP・tablet
 @media screen and(max-width: 768px) {
   body {
     width: 100%;
@@ -90,29 +90,24 @@ img {
     margin: 0 auto;
   }
   
-  .fontOswald {
+  .spFontOswald {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.5px;
     font-weight: 200;
   }
   
   .spHeader {
-    //display: flex;
-    //justify-content: space-between;
-    //align-items: center;
-    
     .inner {
-      padding: 10px 20px;
+      padding: 12px 20px;
       overflow: hidden;
     }
-  
     
     .logo {
       float: left;
       cursor: pointer;
 
       a {
-        @extend .fontOswald;
+        @extend .spFontOswald;
         display: inline-block;
         font-size: 2rem;
         
@@ -134,8 +129,9 @@ img {
         width: 30px;
         height: 2px;
         position: absolute;
-        background: red;
-        
+        background: #979797;
+        transition: .5s;
+  
         &:first-child {
           top: 0;
         }
@@ -167,29 +163,22 @@ img {
         }
       }
     }
-    
-    .open {
-    }
-  
-    .close {
-    }
-  
   
     .globalMenu {
-      //display: none;
-      background: #7a787b;
+      background: rgba(255, 255, 255, 0.80);
       
       ul {
         width: 100%;
         
         li {
           a {
-            @extend .fontOswald;
+            @extend .spFontOswald;
             display: block;
-            padding: 10px;
-            font-size: 16px;
+            padding: 20px 0;
+            font-size: 1.4rem;
             line-height: 1;
             text-align: center;
+            letter-spacing: .5px;
           }
         }
       }
@@ -198,6 +187,10 @@ img {
   
   .pcHeader,
   .pcImg {
+    display: none;
+  }
+  
+  .pcContents {
     display: none;
   }
   
@@ -211,7 +204,7 @@ img {
       position: relative;
       
       .titWrap {
-        @extend .fontOswald;
+        @extend .spFontOswald;
         display: block;
         position: absolute;
         top: 30%;
@@ -242,7 +235,7 @@ img {
     .scrollIcon {
       display: block;
       width: 10%;
-      @include center_x(50%);
+      @include center_x(45%);
       bottom: 8%;
     }
   }
@@ -258,7 +251,7 @@ img {
       }
       
       h2 {
-        @extend .fontOswald;
+        @extend .spFontOswald;
         font-size: 5rem;
         font-weight: 300;
         position: absolute;
@@ -277,12 +270,11 @@ img {
       span {
         color: #C385F4;
         font-size: 1.4rem;
-        
       }
     }
     
     h3 {
-      @extend .fontOswald;
+      @extend .spFontOswald;
       font-size: 3rem;
       font-weight: 300;
       letter-spacing: 0.5px;
@@ -340,7 +332,7 @@ img {
           padding-bottom: 16px;
           
           &::before {
-            @extend .fontOswald;
+            @extend .spFontOswald;
             display: inline-block;
             content: 'Q.';
             font-size: 2.5rem;
@@ -356,7 +348,7 @@ img {
           line-height: 1.6;
           
           &::before {
-            @extend .fontOswald;
+            @extend .spFontOswald;
             display: inline-block;
             content: 'A.';
             font-size: 2.5rem;
@@ -380,7 +372,7 @@ img {
       position: relative;
       
       h2 {
-        @extend .fontOswald;
+        @extend .spFontOswald;
         font-size: 5rem;
         font-weight: 300;
         position: absolute;
@@ -402,10 +394,6 @@ img {
       line-height: 1.75;
       text-align: center;
       letter-spacing: 0.5px;
-    }
-    
-    .pcContents {
-      display: none;
     }
     
     .spContents {
@@ -437,7 +425,7 @@ img {
     }
     
     h3 {
-      @extend .fontOswald;
+      @extend .spFontOswald;
       padding-bottom: 15px;
       font-size: 3rem;
       font-weight: 300;
@@ -458,7 +446,7 @@ img {
     
     dl {
       dt {
-        @extend .fontOswald;
+        @extend .spFontOswald;
         padding-bottom:10px;
         font-size: 1.8rem;
         letter-spacing: 1px;
@@ -549,7 +537,7 @@ img {
     padding: 15% 0;
     
     h2 {
-      @extend .fontOswald;
+      @extend .spFontOswald;
       padding-bottom: 10%;
       font-size: 4rem;
       font-weight: 200;
@@ -579,22 +567,13 @@ img {
     }
   }
   
-  .goTop {
-    padding-bottom: 8%;
-    a {
-      width: 15%;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  
   .works {
     width: 100%;
     margin: 0 auto;
     padding: 10% 0 12%;
     
     .tit {
-      @extend .fontOswald;
+      @extend .spFontOswald;
       padding-bottom: 10%;
       font-size: 4rem;
       font-weight: 200;
@@ -710,7 +689,7 @@ img {
     margin: 0 auto;
   }
   
-  .pc-fontOswald {
+  .pcFontOswald {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.5px;
     font-weight: 200;
@@ -736,7 +715,7 @@ img {
       cursor: pointer;
     
       a {
-        @extend .pc-fontOswald;
+        @extend .pcFontOswald;
         display: inline-block;
         font-size: 2rem;
       
@@ -755,13 +734,17 @@ img {
         padding: 0 10px;
         
         a {
-          @extend .pc-fontOswald;
+          @extend .pcFontOswald;
           font-size: 16px;
           line-height: 1;
           text-align: center;
         }
       }
     }
+  }
+  
+  .spContents {
+    display: none;
   }
   
   section {
@@ -776,14 +759,14 @@ img {
   }
   
   h2 {
-    @extend .pc-fontOswald;
+    @extend .pcFontOswald;
     font-size: 6rem;
     letter-spacing: 0.8px;
     font-weight: 200;
   }
   
   h3 {
-    @extend .pc-fontOswald;
+    @extend .pcFontOswald;
     font-size: 3rem;
     font-weight: 200;
     letter-spacing: 0.5px;
@@ -800,6 +783,7 @@ img {
       background-size: contain;
     }
   }
+  
 //firstView
   .firstView {
     padding: 10px 0 160px;
@@ -811,7 +795,7 @@ img {
     }
     
     .titWrap {
-      @extend .pc-fontOswald;
+      @extend .pcFontOswald;
       display: table-cell;
       vertical-align: middle;
       position: absolute;
@@ -917,7 +901,7 @@ img {
           padding-bottom: 24px;
         
           &::before {
-            @extend .pc-fontOswald;
+            @extend .pcFontOswald;
             display: inline-block;
             content: 'Q.';
             font-size: 2.2rem;
@@ -933,7 +917,7 @@ img {
           line-height: 1.7;
         
           &::before {
-            @extend .pc-fontOswald;
+            @extend .pcFontOswald;
             display: inline-block;
             content: 'A.';
             font-size: 2.2rem;
@@ -961,7 +945,7 @@ img {
     }
 
     .tit {
-      @extend .pc-fontOswald;
+      @extend .pcFontOswald;
       display: table-cell;
       vertical-align: middle;
       position: absolute;
@@ -982,10 +966,6 @@ img {
       font-size: 1.2rem;
       line-height: 1.5;
       text-align: center;
-    }
-    
-    .spContents {
-      display: none;
     }
     
     .pcContents {
@@ -1013,7 +993,7 @@ img {
             padding-left: 64px;
   
             dt {
-              @extend .pc-fontOswald;
+              @extend .pcFontOswald;
               padding-bottom: 8px;
               font-size: 1.6rem;
               letter-spacing: 1px;
@@ -1142,9 +1122,6 @@ img {
         width: (calc 100% / 3);
       }
     }
-  }
-  .spContents {
-    display: none;
   }
   
   .works {
@@ -1310,16 +1287,12 @@ img {
   100% {-moz-transform:translate(0, 0);}
 }
 
-
-
-
-
 footer {
   padding: 8px 0;
   background-color: #F0EFF0;
 
   span {
-    //@extend .fontOswald;
+    @extend .fontOswald;
     display: block;
     font-size: 1.1rem;
     letter-spacing: 1px;
