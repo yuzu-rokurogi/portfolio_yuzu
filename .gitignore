@@ -5,3 +5,5 @@
 
 img/yuzupon_sp.png
 .idea
+node_modules
+.vscode
