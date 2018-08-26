@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+  font: inherit;
+  list-style: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -10,6 +12,10 @@
   font-feature-settings: "palt";
   overflow: visible;
 }
+
+// body div {
+//   font-weight: 200;
+// }
 
 @media screen and (max-width: 374px) {
   html {
@@ -212,9 +218,8 @@ img {
         z-index: 2;
         
         h1 {
-          padding-bottom: 4%;
           font-size: 3.8rem;
-          font-weight: 200;
+          line-height: 1;
         }
         
         p {
@@ -701,7 +706,7 @@ img {
   }
   
   .pcHeader {
-    padding: 10px 0;
+    padding: 8px 0 0;
     
     .inner {
       display: flex;
@@ -804,8 +809,8 @@ img {
       z-index: 2;
   
       h1 {
-        padding-bottom: 8px;
         font-size: 8rem;
+        line-height: 1;
       }
       
       p {
