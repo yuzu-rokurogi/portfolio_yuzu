@@ -6,7 +6,8 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "html5-reset": "^2.1.3",
