@@ -1,74 +1,4 @@
 @charset "UTF-8";
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Users/yuzu_rokurogi/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 2, ../sass/_other.scss */
 * {
   margin: 0;
   padding: 0;
@@ -78,28 +8,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   font-feature-settings: "palt";
-  overflow: visible;
-}
+  overflow: visible; }
 
 @media screen and (max-width: 374px) {
-  /* line 15, ../sass/_other.scss */
   html {
-    font-size: 54.5%;
-  }
-}
+    font-size: 54.5%; } }
+
 @media screen and (min-width: 375px) {
-  /* line 21, ../sass/_other.scss */
   html {
-    font-size: 65%;
-  }
-}
+    font-size: 65%; } }
+
 @media screen and (min-width: 767px) {
-  /* line 27, ../sass/_other.scss */
   html {
-    font-size: 85%;
-  }
-}
-/* line 32, ../sass/_other.scss */
+    font-size: 85%; } }
+
 body {
   position: relative;
   font-size: 1.4rem;
@@ -108,10 +30,8 @@ body {
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
-/* line 43, ../sass/_other.scss */
 header {
   width: 100%;
   height: 55px;
@@ -122,1224 +42,804 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 8px -4px black;
   box-sizing: border-box;
-  z-index: 10;
-}
+  z-index: 10; }
 
-/* line 56, ../sass/_other.scss */
 a {
   color: #18141B;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/* line 61, ../sass/_other.scss */
 img {
   display: block;
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 66, ../sass/_other.scss */
 .fontOswald, footer span {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.5px;
-  font-weight: 200;
-}
+  font-weight: 200; }
 
 @media screen and (max-width: 768px) {
-  /* line 74, ../sass/_other.scss */
   body {
-    width: 100%;
-  }
-
-  /* line 78, ../sass/_other.scss */
+    width: 100%; }
   .w80 {
     width: 80%;
-    margin: 0 auto;
-  }
-
-  /* line 83, ../sass/_other.scss */
+    margin: 0 auto; }
   .w85 {
     width: 85%;
-    margin: 0 auto;
-  }
-
-  /* line 88, ../sass/_other.scss */
+    margin: 0 auto; }
   .w90 {
     width: 90%;
-    margin: 0 auto;
-  }
-
-  /* line 93, ../sass/_other.scss */
+    margin: 0 auto; }
   .spFontOswald, .spHeader .logo a, .spHeader .globalMenu ul li a, .firstView .inner .titWrap, .profile .inner h2, .profile h3, .profile .worksQA dl dt::before, .profile .worksQA dl dd::before, .skill .inner h2, .skill h3, .skill dl dt, .contact h2, .works .tit {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.5px;
-    font-weight: 200;
-  }
-
-  /* line 100, ../sass/_other.scss */
+    font-weight: 200; }
   .spHeader .inner {
     padding: 12px 20px;
-    overflow: hidden;
-  }
-  /* line 105, ../sass/_other.scss */
+    overflow: hidden; }
   .spHeader .logo {
     float: left;
-    cursor: pointer;
-  }
-  /* line 109, ../sass/_other.scss */
-  .spHeader .logo a {
-    display: inline-block;
-    font-size: 2rem;
-  }
-  /* line 114, ../sass/_other.scss */
-  .spHeader .logo a .motif {
-    display: inline-block;
-    width: 20px;
-  }
-  /* line 121, ../sass/_other.scss */
+    cursor: pointer; }
+    .spHeader .logo a {
+      display: inline-block;
+      font-size: 2rem; }
+      .spHeader .logo a .motif {
+        display: inline-block;
+        width: 20px; }
   .spHeader .menu {
     width: 30px;
     float: right;
     margin-top: 5px;
     cursor: pointer;
-    position: relative;
-  }
-  /* line 128, ../sass/_other.scss */
-  .spHeader .menu span {
-    width: 30px;
-    height: 2px;
-    position: absolute;
-    background: #979797;
-    transition: .5s;
-  }
-  /* line 135, ../sass/_other.scss */
-  .spHeader .menu span:first-child {
-    top: 0;
-  }
-  /* line 139, ../sass/_other.scss */
-  .spHeader .menu span:nth-child(2) {
-    top: 8px;
-  }
-  /* line 143, ../sass/_other.scss */
-  .spHeader .menu span:last-child {
-    top: 16px;
-  }
-  /* line 149, ../sass/_other.scss */
-  .spHeader .menu.is-active span:first-child {
-    top: 7px;
-    transform: rotate(-45deg);
-    transition: .5s;
-  }
-  /* line 155, ../sass/_other.scss */
-  .spHeader .menu.is-active span:nth-child(2) {
-    display: none;
-  }
-  /* line 159, ../sass/_other.scss */
-  .spHeader .menu.is-active span:last-child {
-    top: 7px;
-    transform: rotate(45deg);
-    transition: .5s;
-  }
-  /* line 167, ../sass/_other.scss */
+    position: relative; }
+    .spHeader .menu span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      background: #979797;
+      transition: .5s; }
+      .spHeader .menu span:first-child {
+        top: 0; }
+      .spHeader .menu span:nth-child(2) {
+        top: 8px; }
+      .spHeader .menu span:last-child {
+        top: 16px; }
+    .spHeader .menu.is-active span:first-child {
+      top: 7px;
+      transform: rotate(-45deg);
+      transition: .5s; }
+    .spHeader .menu.is-active span:nth-child(2) {
+      display: none; }
+    .spHeader .menu.is-active span:last-child {
+      top: 7px;
+      transform: rotate(45deg);
+      transition: .5s; }
   .spHeader .globalMenu {
-    background: rgba(255, 255, 255, 0.8);
-  }
-  /* line 170, ../sass/_other.scss */
-  .spHeader .globalMenu ul {
-    width: 100%;
-  }
-  /* line 174, ../sass/_other.scss */
-  .spHeader .globalMenu ul li a {
-    display: block;
-    padding: 20px 0;
-    font-size: 1.4rem;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: .5px;
-  }
-
-  /* line 188, ../sass/_other.scss */
+    background: rgba(255, 255, 255, 0.8); }
+    .spHeader .globalMenu ul {
+      width: 100%; }
+      .spHeader .globalMenu ul li a {
+        display: block;
+        padding: 20px 0;
+        font-size: 1.4rem;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: .5px; }
   .pcHeader,
   .pcImg {
-    display: none;
-  }
-
-  /* line 193, ../sass/_other.scss */
+    display: none; }
   .pcContents {
-    display: none;
-  }
-
-  /* line 197, ../sass/_other.scss */
+    display: none; }
   .firstView {
     display: block;
     padding: 5% 0 30%;
-    position: relative;
-  }
-  /* line 202, ../sass/_other.scss */
-  .firstView .inner {
-    overflow: hidden;
-    position: relative;
-  }
-  /* line 206, ../sass/_other.scss */
-  .firstView .inner .titWrap {
-    display: block;
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    z-index: 2;
-  }
-  /* line 214, ../sass/_other.scss */
-  .firstView .inner .titWrap h1 {
-    padding-bottom: 4%;
-    font-size: 3.8rem;
-    font-weight: 200;
-  }
-  /* line 220, ../sass/_other.scss */
-  .firstView .inner .titWrap p {
-    display: inline-block;
-    font-size: 2rem;
-    padding-left: 2%;
-  }
-  /* line 227, ../sass/_other.scss */
-  .firstView .inner .imgWrap {
-    display: block;
-    font-size: 0;
-    float: right;
-    z-index: 1;
-  }
-  /* line 235, ../sass/_other.scss */
-  .firstView .scrollIcon {
-    display: block;
-    width: 10%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    position: absolute;
-    left: 45%;
-    bottom: 8%;
-  }
-
-  /* line 243, ../sass/_other.scss */
+    position: relative; }
+    .firstView .inner {
+      overflow: hidden;
+      position: relative; }
+      .firstView .inner .titWrap {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        z-index: 2; }
+        .firstView .inner .titWrap h1 {
+          padding-bottom: 4%;
+          font-size: 3.8rem;
+          font-weight: 200; }
+        .firstView .inner .titWrap p {
+          display: inline-block;
+          font-size: 2rem;
+          padding-left: 2%; }
+      .firstView .inner .imgWrap {
+        display: block;
+        font-size: 0;
+        float: right;
+        z-index: 1; }
+    .firstView .scrollIcon {
+      display: block;
+      width: 10%;
+      -webkit-transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      position: absolute;
+      left: 45%;
+      bottom: 8%; }
   .profile {
-    padding: 20% 0;
-  }
-  /* line 246, ../sass/_other.scss */
-  .profile .inner {
-    position: relative;
-  }
-  /* line 249, ../sass/_other.scss */
-  .profile .inner .imgWrap {
-    margin-left: 0;
-  }
-  /* line 253, ../sass/_other.scss */
-  .profile .inner h2 {
-    font-size: 5rem;
-    font-weight: 300;
-    position: absolute;
-    top: 20%;
-    right: 8%;
-  }
-  /* line 263, ../sass/_other.scss */
-  .profile .intro {
-    padding: 10% 0;
-    font-size: 1.4rem;
-    line-height: 1.75;
-    text-align: center;
-    letter-spacing: 0.5px;
-  }
-  /* line 270, ../sass/_other.scss */
-  .profile .intro span {
-    color: #C385F4;
-    font-size: 1.4rem;
-  }
-  /* line 276, ../sass/_other.scss */
-  .profile h3 {
-    font-size: 3rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    position: relative;
-  }
-  /* line 283, ../sass/_other.scss */
-  .profile h3::before {
-    display: inline-block;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/tit_motif.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  /* line 295, ../sass/_other.scss */
-  .profile .aboutMe {
-    padding: 5% 0 10%;
-    position: relative;
-  }
-  /* line 299, ../sass/_other.scss */
-  .profile .aboutMe::after {
-    content: '';
-    display: inline-block;
-    width: 40%;
-    height: 1px;
-    background-image: url("../img/dashed_line.png");
-    background-repeat: repeat;
-    background-position: left center;
-    background-size: cover;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-  }
-  /* line 312, ../sass/_other.scss */
-  .profile .aboutMe .text {
-    padding: 5% 4% 0;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    letter-spacing: 1px;
-  }
-  /* line 321, ../sass/_other.scss */
-  .profile .worksQA dl {
-    padding: 10% 4% 0;
-  }
-  /* line 324, ../sass/_other.scss */
-  .profile .worksQA dl dt, .profile .worksQA dl dd {
-    padding-left: 8%;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    position: relative;
-  }
-  /* line 331, ../sass/_other.scss */
-  .profile .worksQA dl dt {
-    padding-bottom: 16px;
-  }
-  /* line 334, ../sass/_other.scss */
-  .profile .worksQA dl dt::before {
-    display: inline-block;
-    content: 'Q.';
-    font-size: 2.5rem;
-    font-weight: 300;
-    position: absolute;
-    top: -10px;
-    left: 0;
-  }
-  /* line 346, ../sass/_other.scss */
-  .profile .worksQA dl dd {
-    padding-bottom: 24px;
-    line-height: 1.6;
-  }
-  /* line 350, ../sass/_other.scss */
-  .profile .worksQA dl dd::before {
-    display: inline-block;
-    content: 'A.';
-    font-size: 2.5rem;
-    font-weight: 300;
-    position: absolute;
-    top: -12px;
-    left: 0;
-  }
-
-  /* line 365, ../sass/_other.scss */
+    padding: 20% 0; }
+    .profile .inner {
+      position: relative; }
+      .profile .inner .imgWrap {
+        margin-left: 0; }
+      .profile .inner h2 {
+        font-size: 5rem;
+        font-weight: 300;
+        position: absolute;
+        top: 20%;
+        right: 8%; }
+    .profile .intro {
+      padding: 10% 0;
+      font-size: 1.4rem;
+      line-height: 1.75;
+      text-align: center;
+      letter-spacing: 0.5px; }
+      .profile .intro span {
+        color: #C385F4;
+        font-size: 1.4rem; }
+    .profile h3 {
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      position: relative; }
+      .profile h3::before {
+        display: inline-block;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/tit_motif.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+    .profile .aboutMe {
+      padding: 5% 0 10%;
+      position: relative; }
+      .profile .aboutMe::after {
+        content: '';
+        display: inline-block;
+        width: 40%;
+        height: 1px;
+        background-image: url("../img/dashed_line.png");
+        background-repeat: repeat;
+        background-position: left center;
+        background-size: cover;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        position: absolute;
+        left: 50%;
+        bottom: 0; }
+      .profile .aboutMe .text {
+        padding: 5% 4% 0;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        letter-spacing: 1px; }
+    .profile .worksQA dl {
+      padding: 10% 4% 0; }
+      .profile .worksQA dl dt, .profile .worksQA dl dd {
+        padding-left: 8%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        position: relative; }
+      .profile .worksQA dl dt {
+        padding-bottom: 16px; }
+        .profile .worksQA dl dt::before {
+          display: inline-block;
+          content: 'Q.';
+          font-size: 2.5rem;
+          font-weight: 300;
+          position: absolute;
+          top: -10px;
+          left: 0; }
+      .profile .worksQA dl dd {
+        padding-bottom: 24px;
+        line-height: 1.6; }
+        .profile .worksQA dl dd::before {
+          display: inline-block;
+          content: 'A.';
+          font-size: 2.5rem;
+          font-weight: 300;
+          position: absolute;
+          top: -12px;
+          left: 0; }
   .skill {
     padding-bottom: 20%;
-    background: linear-gradient(rgba(0, 0, 0, 0) 6%, #f4f2f7 0%);
-    position: relative;
-  }
-  /* line 370, ../sass/_other.scss */
-  .skill .inner {
-    overflow: hidden;
-    position: relative;
-  }
-  /* line 374, ../sass/_other.scss */
-  .skill .inner h2 {
-    font-size: 5rem;
-    font-weight: 300;
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    z-index: 2;
-  }
-  /* line 384, ../sass/_other.scss */
-  .skill .inner .imgWrap {
-    width: 70%;
-    float: right;
-    z-index: 1;
-  }
-  /* line 391, ../sass/_other.scss */
-  .skill .intro {
-    padding: 10% 0;
-    font-size: 1.4rem;
-    line-height: 1.75;
-    text-align: center;
-    letter-spacing: 0.5px;
-  }
-  /* line 400, ../sass/_other.scss */
-  .skill .spContents ul {
-    overflow-x: auto;
-  }
-  /* line 403, ../sass/_other.scss */
-  .skill .spContents ul li {
-    width: 90%;
-    padding: 15% 8%;
-    border-top: 1px solid #18141B;
-    border-bottom: 1px solid #18141B;
-    background-color: #fff;
-  }
-  /* line 410, ../sass/_other.scss */
-  .skill .spContents ul li:not(:first-child) {
-    margin-top: 20%;
-  }
-  /* line 414, ../sass/_other.scss */
-  .skill .spContents ul li.right {
-    margin-left: 10%;
-    border-left: 1px solid #18141B;
-    overflow-x: hidden;
-  }
-  /* line 420, ../sass/_other.scss */
-  .skill .spContents ul li.left {
-    border-right: 1px solid #18141B;
-  }
-  /* line 427, ../sass/_other.scss */
-  .skill h3 {
-    padding-bottom: 15px;
-    font-size: 3rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    position: relative;
-  }
-  /* line 435, ../sass/_other.scss */
-  .skill h3::before {
-    display: inline-block;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/tit_motif.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  /* line 448, ../sass/_other.scss */
-  .skill dl dt {
-    padding-bottom: 10px;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  /* line 455, ../sass/_other.scss */
-  .skill dl dt::before {
-    content: "";
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    top: 0.5em;
-  }
-  /* line 465, ../sass/_other.scss */
-  .skill dl dt.html5::before {
-    background-image: url("../img/icon_html5.png");
-  }
-  /* line 469, ../sass/_other.scss */
-  .skill dl dt.css3::before {
-    background-image: url("../img/icon_css3.png");
-  }
-  /* line 473, ../sass/_other.scss */
-  .skill dl dt.sass::before {
-    background-image: url("../img/icon_sass.png");
-  }
-  /* line 477, ../sass/_other.scss */
-  .skill dl dt.jquery::before {
-    background-image: url("../img/icon_jquery.png");
-  }
-  /* line 481, ../sass/_other.scss */
-  .skill dl dt.wordPress::before {
-    background-image: url("../img/icon_wordpress.png");
-  }
-  /* line 485, ../sass/_other.scss */
-  .skill dl dt.photoshop::before {
-    background-image: url("../img/icon_photoshop.png");
-  }
-  /* line 489, ../sass/_other.scss */
-  .skill dl dt.illustrator::before {
-    background-image: url("../img/icon_illustrator.png");
-  }
-  /* line 493, ../sass/_other.scss */
-  .skill dl dt.sketch::before {
-    background-image: url("../img/icon_sketch.png");
-  }
-  /* line 497, ../sass/_other.scss */
-  .skill dl dt.mac::before {
-    background-image: url("../img/icon_mac.png");
-  }
-  /* line 501, ../sass/_other.scss */
-  .skill dl dt.git::before {
-    background-image: url("../img/icon_git.png");
-  }
-  /* line 505, ../sass/_other.scss */
-  .skill dl dt.slack::before {
-    background-image: url("../img/icon_slack.png");
-  }
-  /* line 510, ../sass/_other.scss */
-  .skill dl dd {
-    padding-bottom: 15px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    letter-spacing: 1px;
-  }
-  /* line 518, ../sass/_other.scss */
-  .skill .works {
-    margin-top: 12%;
-    text-align: center;
-  }
-  /* line 522, ../sass/_other.scss */
-  .skill .works .link {
-    display: inline-block;
-    font-size: 1.4rem;
-    letter-spacing: .5px;
-  }
-  /* line 527, ../sass/_other.scss */
-  .skill .works .link .color {
-    color: #C385F4;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-
-  /* line 536, ../sass/_other.scss */
+    background: linear-gradient(transparent 6%, #F4F2F7 0%);
+    position: relative; }
+    .skill .inner {
+      overflow: hidden;
+      position: relative; }
+      .skill .inner h2 {
+        font-size: 5rem;
+        font-weight: 300;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        z-index: 2; }
+      .skill .inner .imgWrap {
+        width: 70%;
+        float: right;
+        z-index: 1; }
+    .skill .intro {
+      padding: 10% 0;
+      font-size: 1.4rem;
+      line-height: 1.75;
+      text-align: center;
+      letter-spacing: 0.5px; }
+    .skill .spContents ul {
+      overflow-x: auto; }
+      .skill .spContents ul li {
+        width: 90%;
+        padding: 15% 8%;
+        border-top: 1px solid #18141B;
+        border-bottom: 1px solid #18141B;
+        background-color: #fff; }
+        .skill .spContents ul li:not(:first-child) {
+          margin-top: 20%; }
+        .skill .spContents ul li.right {
+          margin-left: 10%;
+          border-left: 1px solid #18141B;
+          overflow-x: hidden; }
+        .skill .spContents ul li.left {
+          border-right: 1px solid #18141B; }
+    .skill h3 {
+      padding-bottom: 15px;
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      position: relative; }
+      .skill h3::before {
+        display: inline-block;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/tit_motif.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+    .skill dl dt {
+      padding-bottom: 10px;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      font-weight: 300; }
+      .skill dl dt::before {
+        content: "";
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        top: 0.5em; }
+      .skill dl dt.html5::before {
+        background-image: url("../img/icon_html5.png"); }
+      .skill dl dt.css3::before {
+        background-image: url("../img/icon_css3.png"); }
+      .skill dl dt.sass::before {
+        background-image: url("../img/icon_sass.png"); }
+      .skill dl dt.jquery::before {
+        background-image: url("../img/icon_jquery.png"); }
+      .skill dl dt.wordPress::before {
+        background-image: url("../img/icon_wordpress.png"); }
+      .skill dl dt.photoshop::before {
+        background-image: url("../img/icon_photoshop.png"); }
+      .skill dl dt.illustrator::before {
+        background-image: url("../img/icon_illustrator.png"); }
+      .skill dl dt.sketch::before {
+        background-image: url("../img/icon_sketch.png"); }
+      .skill dl dt.mac::before {
+        background-image: url("../img/icon_mac.png"); }
+      .skill dl dt.git::before {
+        background-image: url("../img/icon_git.png"); }
+      .skill dl dt.slack::before {
+        background-image: url("../img/icon_slack.png"); }
+    .skill dl dd {
+      padding-bottom: 15px;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      letter-spacing: 1px; }
+    .skill .works {
+      margin-top: 12%;
+      text-align: center; }
+      .skill .works .link {
+        display: inline-block;
+        font-size: 1.4rem;
+        letter-spacing: .5px; }
+        .skill .works .link .color {
+          color: #C385F4;
+          font-size: 1.4rem;
+          font-weight: bold; }
   .contact {
-    padding: 15% 0;
-  }
-  /* line 539, ../sass/_other.scss */
-  .contact h2 {
-    padding-bottom: 10%;
-    font-size: 4rem;
-    font-weight: 200;
-    text-align: center;
-  }
-  /* line 547, ../sass/_other.scss */
-  .contact p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  /* line 554, ../sass/_other.scss */
-  .contact ul {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  /* line 560, ../sass/_other.scss */
-  .contact ul li {
-    padding: 5%;
-  }
-  /* line 563, ../sass/_other.scss */
-  .contact ul li a {
-    display: block;
-  }
-
-  /* line 570, ../sass/_other.scss */
+    padding: 15% 0; }
+    .contact h2 {
+      padding-bottom: 10%;
+      font-size: 4rem;
+      font-weight: 200;
+      text-align: center; }
+    .contact p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      text-align: center;
+      letter-spacing: 1px; }
+    .contact ul {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; }
+      .contact ul li {
+        padding: 5%; }
+        .contact ul li a {
+          display: block; }
   .works {
     width: 100%;
     margin: 0 auto;
-    padding: 10% 0 12%;
-  }
-  /* line 575, ../sass/_other.scss */
-  .works .tit {
-    padding-bottom: 10%;
-    font-size: 4rem;
-    font-weight: 200;
-    text-align: center;
-  }
-  /* line 583, ../sass/_other.scss */
-  .works dl {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    font-size: 0;
-  }
-  /* line 589, ../sass/_other.scss */
-  .works dl dt, .works dl dd {
-    display: block;
-  }
-  /* line 593, ../sass/_other.scss */
-  .works dl dt {
-    font-size: 1.2rem;
-  }
-  /* line 594, ../sass/_other.scss */
-  .works dl dt:not(:first-child) {
-    padding-top: 10px;
-  }
-  /* line 601, ../sass/_other.scss */
-  .works dl dd .item {
-    position: relative;
-    border-bottom: 1px solid;
-    cursor: pointer;
-  }
-  /* line 606, ../sass/_other.scss */
-  .works dl dd .item:after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border: 0px;
-    border-bottom: solid 2px #38374f;
-    border-right: solid 2px #38374f;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -6px;
-  }
-  /* line 622, ../sass/_other.scss */
-  .works dl dd .item a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    vertical-align: middle;
-  }
-  /* line 630, ../sass/_other.scss */
-  .works dl dd .item p {
-    display: inline-block;
-    padding: 8px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    vertical-align: middle;
-  }
-  /* line 639, ../sass/_other.scss */
-  .works dl dd .detail {
-    display: none;
-    padding: 10px 8px;
-  }
-  /* line 643, ../sass/_other.scss */
-  .works dl dd .detail p {
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-  }
-  /* line 649, ../sass/_other.scss */
-  .works dl dd .detail p .bold {
-    display: block;
-    font-weight: bold;
-  }
-  /* line 654, ../sass/_other.scss */
-  .works dl dd .detail p a {
-    display: inline-block;
-  }
-  /* line 660, ../sass/_other.scss */
-  .works dl dd .open {
-    display: block;
-  }
-  /* line 666, ../sass/_other.scss */
-  .works .return {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 32px;
-    text-align: right;
-  }
-  /* line 672, ../sass/_other.scss */
-  .works .return .link {
-    font-size: 1.4rem;
-    position: relative;
-  }
-  /* line 676, ../sass/_other.scss */
-  .works .return .link .color {
-    color: #C385F4;
-    font-weight: bold;
-  }
-}
+    padding: 10% 0 12%; }
+    .works .tit {
+      padding-bottom: 10%;
+      font-size: 4rem;
+      font-weight: 200;
+      text-align: center; }
+    .works dl {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0; }
+      .works dl dt, .works dl dd {
+        display: block; }
+      .works dl dt {
+        font-size: 1.2rem; }
+        .works dl dt:not(:first-child) {
+          padding-top: 10px; }
+      .works dl dd .item {
+        position: relative;
+        border-bottom: 1px solid;
+        cursor: pointer; }
+        .works dl dd .item:after {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border: 0px;
+          border-bottom: solid 2px #38374f;
+          border-right: solid 2px #38374f;
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          margin-top: -6px; }
+        .works dl dd .item a {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+          vertical-align: middle; }
+        .works dl dd .item p {
+          display: inline-block;
+          padding: 8px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          vertical-align: middle; }
+      .works dl dd .detail {
+        display: none;
+        padding: 10px 8px; }
+        .works dl dd .detail p {
+          margin-bottom: 8px;
+          font-size: 1.2rem;
+          line-height: 1.5;
+          letter-spacing: 1px; }
+          .works dl dd .detail p .bold {
+            display: block;
+            font-weight: bold; }
+          .works dl dd .detail p a {
+            display: inline-block; }
+      .works dl dd .open {
+        display: block; }
+    .works .return {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 32px;
+      text-align: right; }
+      .works .return .link {
+        font-size: 1.4rem;
+        position: relative; }
+        .works .return .link .color {
+          color: #C385F4;
+          font-weight: bold; } }
+
 @media screen and (min-width: 769px) {
-  /* line 687, ../sass/_other.scss */
   body {
     width: 100%;
-    margin: 0 auto;
-  }
-
-  /* line 692, ../sass/_other.scss */
+    margin: 0 auto; }
   .pcFontOswald, .pcHeader .logo a, .pcHeader ul li a, h2, h3, .firstView .titWrap, .profile .worksQA dl dt::before, .profile .worksQA dl dd::before, .skill .tit, .skill .pcContents ul li dl dt {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.5px;
-    font-weight: 200;
-  }
-
-  /* line 698, ../sass/_other.scss */
+    font-weight: 200; }
   .spHeader,
   .spImg {
-    display: none;
-  }
-
-  /* line 703, ../sass/_other.scss */
+    display: none; }
   .pcHeader {
-    padding: 10px 0;
-  }
-  /* line 706, ../sass/_other.scss */
-  .pcHeader .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 1024px;
-    margin: 0 auto;
-  }
-  /* line 714, ../sass/_other.scss */
-  .pcHeader .logo {
-    cursor: pointer;
-  }
-  /* line 717, ../sass/_other.scss */
-  .pcHeader .logo a {
-    display: inline-block;
-    font-size: 2rem;
-  }
-  /* line 722, ../sass/_other.scss */
-  .pcHeader .logo a .motif {
-    display: inline-block;
-    width: 20px;
-  }
-  /* line 729, ../sass/_other.scss */
-  .pcHeader ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* line 733, ../sass/_other.scss */
-  .pcHeader ul li {
-    padding: 0 10px;
-  }
-  /* line 736, ../sass/_other.scss */
-  .pcHeader ul li a {
-    font-size: 16px;
-    line-height: 1;
-    text-align: center;
-  }
-
-  /* line 746, ../sass/_other.scss */
+    padding: 10px 0; }
+    .pcHeader .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 1024px;
+      margin: 0 auto; }
+    .pcHeader .logo {
+      cursor: pointer; }
+      .pcHeader .logo a {
+        display: inline-block;
+        font-size: 2rem; }
+        .pcHeader .logo a .motif {
+          display: inline-block;
+          width: 20px; }
+    .pcHeader ul {
+      display: flex;
+      justify-content: space-around; }
+      .pcHeader ul li {
+        padding: 0 10px; }
+        .pcHeader ul li a {
+          font-size: 16px;
+          line-height: 1;
+          text-align: center; }
   .spContents {
-    display: none;
-  }
-
-  /* line 750, ../sass/_other.scss */
+    display: none; }
   section {
     width: 1024px;
-    margin: 0 auto;
-  }
-  /* line 754, ../sass/_other.scss */
-  section .inner {
-    width: 856px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  /* line 761, ../sass/_other.scss */
+    margin: 0 auto; }
+    section .inner {
+      width: 856px;
+      margin: 0 auto;
+      position: relative; }
   h2 {
     font-size: 6rem;
     letter-spacing: 0.8px;
-    font-weight: 200;
-  }
-
-  /* line 768, ../sass/_other.scss */
+    font-weight: 200; }
   h3 {
     font-size: 3rem;
     font-weight: 200;
     letter-spacing: 0.5px;
-    position: relative;
-  }
-  /* line 775, ../sass/_other.scss */
-  h3::before {
-    display: inline-block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/tit_motif.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  /* line 788, ../sass/_other.scss */
+    position: relative; }
+    h3::before {
+      display: inline-block;
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/tit_motif.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
   .firstView {
-    padding: 10px 0 160px;
-  }
-  /* line 791, ../sass/_other.scss */
-  .firstView .inner {
-    font-size: 0;
-    position: relative;
-    display: table;
-  }
-  /* line 797, ../sass/_other.scss */
-  .firstView .titWrap {
-    display: table-cell;
-    vertical-align: middle;
-    position: absolute;
-    top: 32%;
-    left: 0;
-    z-index: 2;
-  }
-  /* line 806, ../sass/_other.scss */
-  .firstView .titWrap h1 {
-    padding-bottom: 8px;
-    font-size: 8rem;
-  }
-  /* line 811, ../sass/_other.scss */
-  .firstView .titWrap p {
-    display: inline-block;
-    padding-left: 20px;
-    font-size: 4rem;
-  }
-  /* line 818, ../sass/_other.scss */
-  .firstView .imgWrap {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-    z-index: 1;
-  }
-  /* line 825, ../sass/_other.scss */
-  .firstView .scrollIcon {
-    width: 40px;
-    margin: 0 auto;
-    padding-top: 30px;
-  }
-
-  /* line 834, ../sass/_other.scss */
+    padding: 10px 0 160px; }
+    .firstView .inner {
+      font-size: 0;
+      position: relative;
+      display: table; }
+    .firstView .titWrap {
+      display: table-cell;
+      vertical-align: middle;
+      position: absolute;
+      top: 32%;
+      left: 0;
+      z-index: 2; }
+      .firstView .titWrap h1 {
+        padding-bottom: 8px;
+        font-size: 8rem; }
+      .firstView .titWrap p {
+        display: inline-block;
+        padding-left: 20px;
+        font-size: 4rem; }
+    .firstView .imgWrap {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50%;
+      z-index: 1; }
+    .firstView .scrollIcon {
+      width: 40px;
+      margin: 0 auto;
+      padding-top: 30px; }
   .profile .imgWrap {
-    width: 560px;
-  }
-  /* line 838, ../sass/_other.scss */
+    width: 560px; }
   .profile .tit {
     position: absolute;
     top: 20%;
-    right: 18%;
-  }
-  /* line 844, ../sass/_other.scss */
+    right: 18%; }
   .profile .aboutMe,
   .profile .worksQA {
     width: 640px;
     margin: 0 auto;
-    padding: 64px 0 104px;
-  }
-  /* line 851, ../sass/_other.scss */
+    padding: 64px 0 104px; }
   .profile .aboutMe {
-    position: relative;
-  }
-  /* line 854, ../sass/_other.scss */
-  .profile .aboutMe::after {
-    content: '';
-    display: inline-block;
-    width: 40%;
-    height: 1px;
-    background-image: url("../img/dashed_line.png");
-    background-repeat: repeat;
-    background-position: left center;
-    background-size: cover;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-  }
-  /* line 868, ../sass/_other.scss */
+    position: relative; }
+    .profile .aboutMe::after {
+      content: '';
+      display: inline-block;
+      width: 40%;
+      height: 1px;
+      background-image: url("../img/dashed_line.png");
+      background-repeat: repeat;
+      background-position: left center;
+      background-size: cover;
+      -webkit-transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      position: absolute;
+      left: 50%;
+      bottom: 0; }
   .profile .intro {
     font-size: 1.2rem;
     line-height: 1.5;
-    text-align: center;
-  }
-  /* line 874, ../sass/_other.scss */
+    text-align: center; }
   .profile .color {
-    color: #C385F4;
-  }
-  /* line 878, ../sass/_other.scss */
+    color: #C385F4; }
   .profile h3 {
-    padding-top: 64px;
-  }
-  /* line 882, ../sass/_other.scss */
+    padding-top: 64px; }
   .profile .text {
     padding: 40px 0 0 64px;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    line-height: 1.7;
-  }
-  /* line 890, ../sass/_other.scss */
+    line-height: 1.7; }
   .profile .worksQA dl {
-    padding: 56px 0 0 64px;
-  }
-  /* line 893, ../sass/_other.scss */
-  .profile .worksQA dl dt, .profile .worksQA dl dd {
-    padding-left: 8%;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    position: relative;
-  }
-  /* line 900, ../sass/_other.scss */
-  .profile .worksQA dl dt {
-    padding-bottom: 24px;
-  }
-  /* line 903, ../sass/_other.scss */
-  .profile .worksQA dl dt::before {
-    display: inline-block;
-    content: 'Q.';
-    font-size: 2.2rem;
-    font-weight: 300;
-    position: absolute;
-    top: -10px;
-    left: 0;
-  }
-  /* line 915, ../sass/_other.scss */
-  .profile .worksQA dl dd {
-    padding-bottom: 32px;
-    line-height: 1.7;
-  }
-  /* line 919, ../sass/_other.scss */
-  .profile .worksQA dl dd::before {
-    display: inline-block;
-    content: 'A.';
-    font-size: 2.2rem;
-    font-weight: 300;
-    position: absolute;
-    top: -12px;
-    left: 0;
-  }
-
-  /* line 935, ../sass/_other.scss */
+    padding: 56px 0 0 64px; }
+    .profile .worksQA dl dt, .profile .worksQA dl dd {
+      padding-left: 8%;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      position: relative; }
+    .profile .worksQA dl dt {
+      padding-bottom: 24px; }
+      .profile .worksQA dl dt::before {
+        display: inline-block;
+        content: 'Q.';
+        font-size: 2.2rem;
+        font-weight: 300;
+        position: absolute;
+        top: -10px;
+        left: 0; }
+    .profile .worksQA dl dd {
+      padding-bottom: 32px;
+      line-height: 1.7; }
+      .profile .worksQA dl dd::before {
+        display: inline-block;
+        content: 'A.';
+        font-size: 2.2rem;
+        font-weight: 300;
+        position: absolute;
+        top: -12px;
+        left: 0; }
   .skill {
     width: 100%;
     margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0) 190px, #f4f2f7 0%);
-    position: relative;
-  }
-  /* line 941, ../sass/_other.scss */
-  .skill .inner {
-    font-size: 0;
-    position: relative;
-    display: table;
-  }
-  /* line 947, ../sass/_other.scss */
-  .skill .tit {
-    display: table-cell;
-    vertical-align: middle;
-    position: absolute;
-    top: 16%;
-    left: 24%;
-    z-index: 2;
-  }
-  /* line 957, ../sass/_other.scss */
-  .skill .imgWrap {
-    display: table-cell;
-    vertical-align: middle;
-    width: 560px;
-    z-index: 1;
-  }
-  /* line 964, ../sass/_other.scss */
-  .skill .intro {
-    padding: 80px 0 64px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-  /* line 971, ../sass/_other.scss */
-  .skill .pcContents {
-    width: 856px;
-    margin: 0 auto;
-    padding-bottom: 104px;
-  }
-  /* line 977, ../sass/_other.scss */
-  .skill .pcContents ul li {
-    padding: 90px;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    background-color: #fff;
-    box-shadow: 0px 0px 40px 30px #f5f2f7 inset;
-  }
-  /* line 978, ../sass/_other.scss */
-  .skill .pcContents ul li:not(:first-child) {
-    margin-top: 64px;
-  }
-  /* line 988, ../sass/_other.scss */
-  .skill .pcContents ul li h3 {
-    padding-bottom: 16px;
-  }
-  /* line 992, ../sass/_other.scss */
-  .skill .pcContents ul li dl {
-    padding-left: 64px;
-  }
-  /* line 995, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt {
-    padding-bottom: 8px;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  /* line 1002, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt::before {
-    content: "";
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    top: 0.4em;
-  }
-  /* line 1012, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.html5::before {
-    background-image: url("../img/icon_html5.png");
-  }
-  /* line 1016, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.css3::before {
-    background-image: url("../img/icon_css3.png");
-  }
-  /* line 1020, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.sass::before {
-    background-image: url("../img/icon_sass.png");
-  }
-  /* line 1024, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.jquery::before {
-    background-image: url("../img/icon_jquery.png");
-  }
-  /* line 1028, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.wordPress::before {
-    background-image: url("../img/icon_wordpress.png");
-  }
-  /* line 1032, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.photoshop::before {
-    background-image: url("../img/icon_photoshop.png");
-  }
-  /* line 1036, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.illustrator::before {
-    background-image: url("../img/icon_illustrator.png");
-  }
-  /* line 1040, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.sketch::before {
-    background-image: url("../img/icon_sketch.png");
-  }
-  /* line 1044, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.mac::before {
-    background-image: url("../img/icon_mac.png");
-  }
-  /* line 1048, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.git::before {
-    background-image: url("../img/icon_git.png");
-  }
-  /* line 1052, ../sass/_other.scss */
-  .skill .pcContents ul li dl dt.slack::before {
-    background-image: url("../img/icon_slack.png");
-  }
-  /* line 1057, ../sass/_other.scss */
-  .skill .pcContents ul li dl dd {
-    padding: 0 0 20px 5px;
-    font-size: 1.2rem;
-    line-height: 1.7;
-  }
-  /* line 1067, ../sass/_other.scss */
-  .skill .works {
-    padding: 24px 32px 0 0;
-    text-align: right;
-  }
-  /* line 1071, ../sass/_other.scss */
-  .skill .works .link {
-    font-size: 1.2rem;
-    position: relative;
-  }
-  /* line 1075, ../sass/_other.scss */
-  .skill .works .link .color {
-    color: #C385F4;
-    font-weight: bold;
-  }
-  /* line 1081, ../sass/_other.scss */
-  .skill .works .link::before {
-    position: absolute;
-    top: 1.2em;
-    left: 0;
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 1px;
-    background: #7a787b;
-    transition: .5s;
-  }
-  /* line 1093, ../sass/_other.scss */
-  .skill .works .link:hover::before {
-    width: 100%;
-  }
-
-  /* line 1099, ../sass/_other.scss */
+    position: relative; }
+    .skill .inner {
+      font-size: 0;
+      position: relative;
+      display: table; }
+    .skill .tit {
+      display: table-cell;
+      vertical-align: middle;
+      position: absolute;
+      top: 16%;
+      left: 24%;
+      z-index: 2; }
+    .skill .imgWrap {
+      display: table-cell;
+      vertical-align: middle;
+      width: 560px;
+      z-index: 1; }
+    .skill .intro {
+      padding: 80px 0 64px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: center; }
+    .skill .pcContents {
+      width: 856px;
+      margin: 0 auto;
+      padding-bottom: 104px; }
+      .skill .pcContents ul li {
+        padding: 90px;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        background-color: #fff;
+        box-shadow: 0px 0px 40px 30px #f5f2f7 inset; }
+        .skill .pcContents ul li:not(:first-child) {
+          margin-top: 64px; }
+        .skill .pcContents ul li h3 {
+          padding-bottom: 16px; }
+        .skill .pcContents ul li dl {
+          padding-left: 64px; }
+          .skill .pcContents ul li dl dt {
+            padding-bottom: 8px;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            font-weight: 300; }
+            .skill .pcContents ul li dl dt::before {
+              content: "";
+              width: 35px;
+              height: 35px;
+              display: inline-block;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              position: relative;
+              top: 0.4em; }
+            .skill .pcContents ul li dl dt.html5::before {
+              background-image: url("../img/icon_html5.png"); }
+            .skill .pcContents ul li dl dt.css3::before {
+              background-image: url("../img/icon_css3.png"); }
+            .skill .pcContents ul li dl dt.sass::before {
+              background-image: url("../img/icon_sass.png"); }
+            .skill .pcContents ul li dl dt.jquery::before {
+              background-image: url("../img/icon_jquery.png"); }
+            .skill .pcContents ul li dl dt.wordPress::before {
+              background-image: url("../img/icon_wordpress.png"); }
+            .skill .pcContents ul li dl dt.photoshop::before {
+              background-image: url("../img/icon_photoshop.png"); }
+            .skill .pcContents ul li dl dt.illustrator::before {
+              background-image: url("../img/icon_illustrator.png"); }
+            .skill .pcContents ul li dl dt.sketch::before {
+              background-image: url("../img/icon_sketch.png"); }
+            .skill .pcContents ul li dl dt.mac::before {
+              background-image: url("../img/icon_mac.png"); }
+            .skill .pcContents ul li dl dt.git::before {
+              background-image: url("../img/icon_git.png"); }
+            .skill .pcContents ul li dl dt.slack::before {
+              background-image: url("../img/icon_slack.png"); }
+          .skill .pcContents ul li dl dd {
+            padding: 0 0 20px 5px;
+            font-size: 1.2rem;
+            line-height: 1.7; }
+    .skill .works {
+      padding: 24px 32px 0 0;
+      text-align: right; }
+      .skill .works .link {
+        font-size: 1.2rem;
+        position: relative; }
+        .skill .works .link .color {
+          color: #C385F4;
+          font-weight: bold; }
+      .skill .works .link::before {
+        position: absolute;
+        top: 1.2em;
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 1px;
+        background: #7a787b;
+        transition: .5s; }
+      .skill .works .link:hover::before {
+        width: 100%; }
   .contact {
     width: 300px;
     margin: 0 auto;
     padding: 104px 0;
-    text-align: center;
-  }
-  /* line 1105, ../sass/_other.scss */
-  .contact h2 {
-    padding-bottom: 24px;
-    font-size: 4rem;
-  }
-  /* line 1110, ../sass/_other.scss */
-  .contact .comment {
-    padding-bottom: 40px;
-    font-size: 1.2rem;
-    line-height: 1.7;
-  }
-  /* line 1116, ../sass/_other.scss */
-  .contact ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /* line 1121, ../sass/_other.scss */
-  .contact ul li {
-    width: calc 100%/3;
-  }
-
-  /* line 1127, ../sass/_other.scss */
+    text-align: center; }
+    .contact h2 {
+      padding-bottom: 24px;
+      font-size: 4rem; }
+    .contact .comment {
+      padding-bottom: 40px;
+      font-size: 1.2rem;
+      line-height: 1.7; }
+    .contact ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contact ul li {
+        width: calc 100%/2; }
   .works {
     width: 720px;
     margin: 0 auto;
-    padding: 64px 0 102px;
-  }
-  /* line 1132, ../sass/_other.scss */
-  .works .tit {
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  /* line 1137, ../sass/_other.scss */
-  .works dl {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    font-size: 0;
-  }
-  /* line 1143, ../sass/_other.scss */
-  .works dl dt, .works dl dd {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 1148, ../sass/_other.scss */
-  .works dl dt {
-    width: 20%;
-    padding: 5px 0;
-    font-size: 1.2rem;
-  }
-  /* line 1154, ../sass/_other.scss */
-  .works dl dd {
-    width: 80%;
-  }
-  /* line 1157, ../sass/_other.scss */
-  .works dl dd .item {
-    position: relative;
-    padding-left: 5px;
-    border-bottom: 1px solid;
-    cursor: pointer;
-  }
-  /* line 1163, ../sass/_other.scss */
-  .works dl dd .item:after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border: 0px;
-    border-bottom: solid 2px #38374f;
-    border-right: solid 2px #38374f;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    margin-top: -6px;
-  }
-  /* line 1179, ../sass/_other.scss */
-  .works dl dd .item:hover {
-    background: rgba(244, 242, 247, 0.76);
-    transition: 0.5s;
-  }
-  /* line 1184, ../sass/_other.scss */
-  .works dl dd .item a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    vertical-align: middle;
-  }
-  /* line 1191, ../sass/_other.scss */
-  .works dl dd .item a:hover {
-    background: #faff34;
-    transition: .5s;
-  }
-  /* line 1197, ../sass/_other.scss */
-  .works dl dd .item p {
-    display: inline-block;
-    padding: 8px 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    vertical-align: middle;
-  }
-  /* line 1206, ../sass/_other.scss */
-  .works dl dd .detail {
-    display: none;
-    padding: 10px 0;
-  }
-  /* line 1210, ../sass/_other.scss */
-  .works dl dd .detail p {
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-  }
-  /* line 1216, ../sass/_other.scss */
-  .works dl dd .detail p .bold {
-    display: block;
-    font-weight: bold;
-  }
-  /* line 1221, ../sass/_other.scss */
-  .works dl dd .detail p a {
-    display: inline-block;
-  }
-  /* line 1227, ../sass/_other.scss */
-  .works dl dd .open {
-    display: block;
-  }
-  /* line 1233, ../sass/_other.scss */
-  .works .return {
-    padding-top: 32px;
-    text-align: right;
-  }
-  /* line 1237, ../sass/_other.scss */
-  .works .return .link {
-    font-size: 1.2rem;
-    position: relative;
-  }
-  /* line 1241, ../sass/_other.scss */
-  .works .return .link .color {
-    color: #C385F4;
-    font-weight: bold;
-  }
-  /* line 1246, ../sass/_other.scss */
-  .works .return .link::before {
-    position: absolute;
-    top: 1.2em;
-    right: 0;
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 1px;
-    background: #7a787b;
-    transition: .5s;
-  }
-  /* line 1259, ../sass/_other.scss */
-  .works .return .link:hover::before {
-    width: 100%;
-  }
-}
-/* line 1267, ../sass/_other.scss */
+    padding: 64px 0 102px; }
+    .works .tit {
+      padding-bottom: 40px;
+      text-align: center; }
+    .works dl {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      font-size: 0; }
+      .works dl dt, .works dl dd {
+        display: inline-block;
+        vertical-align: middle; }
+      .works dl dt {
+        width: 20%;
+        padding: 5px 0;
+        font-size: 1.2rem; }
+      .works dl dd {
+        width: 80%; }
+        .works dl dd .item {
+          position: relative;
+          padding-left: 5px;
+          border-bottom: 1px solid;
+          cursor: pointer; }
+          .works dl dd .item:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border: 0px;
+            border-bottom: solid 2px #38374f;
+            border-right: solid 2px #38374f;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            margin-top: -6px; }
+          .works dl dd .item:hover {
+            background: rgba(244, 242, 247, 0.76);
+            transition: 0.5s; }
+          .works dl dd .item a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            vertical-align: middle; }
+            .works dl dd .item a:hover {
+              background: #faff34;
+              transition: .5s; }
+          .works dl dd .item p {
+            display: inline-block;
+            padding: 8px 5px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            vertical-align: middle; }
+        .works dl dd .detail {
+          display: none;
+          padding: 10px 0; }
+          .works dl dd .detail p {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            letter-spacing: 1px; }
+            .works dl dd .detail p .bold {
+              display: block;
+              font-weight: bold; }
+            .works dl dd .detail p a {
+              display: inline-block; }
+        .works dl dd .open {
+          display: block; }
+    .works .return {
+      padding-top: 32px;
+      text-align: right; }
+      .works .return .link {
+        font-size: 1.2rem;
+        position: relative; }
+        .works .return .link .color {
+          color: #C385F4;
+          font-weight: bold; }
+        .works .return .link::before {
+          position: absolute;
+          top: 1.2em;
+          right: 0;
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 1px;
+          background: #7a787b;
+          transition: .5s; }
+      .works .return .link:hover::before {
+        width: 100%; } }
+
 .fuwafuwa {
   -webkit-animation-name: fuwafuwa;
   -webkit-animation-duration: 2s;
@@ -1348,45 +848,33 @@ img {
   -moz-animation-name: fuwafuwa;
   -moz-animation-duration: 2s;
   -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease;
-}
+  -moz-animation-timing-function: ease; }
 
 @-webkit-keyframes fuwafuwa {
   0% {
-    -webkit-transform: translate(0, 0);
-  }
+    -webkit-transform: translate(0, 0); }
   50% {
-    -webkit-transform: translate(0, -10px);
-  }
+    -webkit-transform: translate(0, -10px); }
   100% {
-    -webkit-transform: translate(0, 0);
-  }
-}
+    -webkit-transform: translate(0, 0); } }
+
 @-moz-keyframes fuwafuwa {
   0% {
-    -moz-transform: translate(0, 0);
-  }
+    -moz-transform: translate(0, 0); }
   50% {
-    -moz-transform: translate(0, -5px);
-  }
+    -moz-transform: translate(0, -5px); }
   100% {
-    -moz-transform: translate(0, 0);
-  }
-}
-/* line 1290, ../sass/_other.scss */
+    -moz-transform: translate(0, 0); } }
+
 footer {
   padding: 8px 0;
-  background-color: #F0EFF0;
-}
-/* line 1294, ../sass/_other.scss */
-footer span {
-  display: block;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  text-align: center;
-}
+  background-color: #F0EFF0; }
+  footer span {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center; }
 
-/* line 1303, ../sass/_other.scss */
 .block-revealer__element {
   position: absolute;
   top: 0;
@@ -1395,38 +883,29 @@ footer span {
   height: 100%;
   background: #000;
   pointer-events: none;
-  opacity: 0;
-}
+  opacity: 0; }
 
-/* line 1314, ../sass/_other.scss */
 .fadein {
   opacity: 0;
   transform: translate(0, 24px);
-  transition: all 800ms;
-}
+  transition: all 800ms; }
 
-/* line 1320, ../sass/_other.scss */
 .fadein.scrollin,
 .skillFadein.skillScrollin,
 .skillFadeinR.skillScrollin {
   display: block;
   opacity: 1;
   transition: all 1s;
-  transform: translate(0, 0);
-}
+  transform: translate(0, 0); }
 
-/* line 1329, ../sass/_other.scss */
 .skillFadein {
   display: block;
   opacity: 0;
   transform: translate(-80px, 0);
-  transition: all 800ms;
-}
+  transition: all 800ms; }
 
-/* line 1336, ../sass/_other.scss */
 .skillFadeinR {
   display: block;
   opacity: 0;
   transform: translate(80px, 0);
-  transition: all 800ms;
-}
+  transition: all 800ms; }
