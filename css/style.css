@@ -357,11 +357,10 @@ img {
       text-align: center; }
       .skill .works .link {
         display: inline-block;
-        font-size: 1.4rem;
+        font-size: 2rem;
         letter-spacing: .5px; }
         .skill .works .link .color {
           color: #C385F4;
-          font-size: 1.4rem;
           font-weight: bold; }
   .contact {
     padding: 15% 0; }
@@ -711,7 +710,7 @@ img {
       padding: 24px 32px 0 0;
       text-align: right; }
       .skill .works .link {
-        font-size: 1.2rem;
+        font-size: 2rem;
         position: relative; }
         .skill .works .link .color {
           color: #C385F4;
