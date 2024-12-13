@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "lodash": "^4.17.14"
